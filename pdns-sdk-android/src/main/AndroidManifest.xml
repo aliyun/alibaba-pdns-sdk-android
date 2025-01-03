@@ -1,0 +1,15 @@
+<manifest package="com.alibaba.pdns"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 需要配置的权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application>
+
+        <!--Android9.0网络行为变更：会报Didn`t find class BasicHttpParams异常-->
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+    </application>
+
+    </manifest>

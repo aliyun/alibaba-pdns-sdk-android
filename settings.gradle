@@ -1,0 +1,2 @@
+rootProject.name='AlidnsTest'
+include ':pdns-sdk-android'
