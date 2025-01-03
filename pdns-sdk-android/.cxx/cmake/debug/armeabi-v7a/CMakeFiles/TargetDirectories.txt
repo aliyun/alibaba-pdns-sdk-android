@@ -1,0 +1,3 @@
+/Users/xinghao/Desktop/SDK上线/AlidnsTest/pdns-sdk-android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/Users/xinghao/Desktop/SDK上线/AlidnsTest/pdns-sdk-android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/xinghao/Desktop/SDK上线/AlidnsTest/pdns-sdk-android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/alipdns.dir
