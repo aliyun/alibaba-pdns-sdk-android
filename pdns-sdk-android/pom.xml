@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.alibaba.pdns</groupId>
+  <artifactId>alidns-android-sdk</artifactId>
+  <version>2.2.7</version>
+  <packaging>aar</packaging>
+  <name>provides developer domain name resolution development kit</name>
+  <url>https://help.aliyun.com/document_detail/171666.html?spm=a2c4g.11186623.2.17.5b7836b5ocuTWf#2571775</url>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>pdns</id>
+      <name>pdnsdk</name>
+      <email>wb-xh839484@alibaba-inc.com</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>https://help.aliyun.com/document_detail/171666.html?spm=a2c4g.11186623.2.17.5b7836b5ocuTWf#2571775</connection>
+    <developerConnection>https://help.aliyun.com/document_detail/171666.html?spm=a2c4g.11186623.2.17.5b7836b5ocuTWf#2571775</developerConnection>
+    <url>https://help.aliyun.com/document_detail/171666.html?spm=a2c4g.11186623.2.17.5b7836b5ocuTWf#2571775</url>
+  </scm>
+</project>
