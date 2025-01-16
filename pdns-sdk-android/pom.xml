@@ -9,88 +9,94 @@
   <build>
       <plugins>
           <plugin>
-                  <artifactId>maven-compiler-plugin</artifactId>
-                  <version>2.3.2</version>
-                  <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                    <encoding>UTF-8</encoding>
-                  </configuration>
-                </plugin>
-                <plugin>
-                  <groupId>org.apache.maven.plugins</groupId>
-                  <artifactId>maven-jar-plugin</artifactId>
-                  <version>2.3.2</version>
-                  <configuration/>
-                </plugin>
-                <plugin>
-                  <groupId>org.apache.maven.plugins</groupId>
-                  <artifactId>maven-source-plugin</artifactId>
-                  <version>2.3</version>
-                  <executions>
-                    <execution>
+              <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+              <artifactId>android-maven-plugin</artifactId>
+              <version>4.4.0</version>
+              <extensions>true</extensions>
+          </plugin>
+          <plugin>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <version>2.3.2</version>
+              <configuration>
+                  <source>1.8</source>
+                  <target>1.8</target>
+                  <encoding>UTF-8</encoding>
+              </configuration>
+          </plugin>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-jar-plugin</artifactId>
+              <version>2.3.2</version>
+              <configuration/>
+          </plugin>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-source-plugin</artifactId>
+              <version>2.3</version>
+              <executions>
+                  <execution>
                       <id>attach-sources</id>
                       <goals>
-                        <goal>jar-no-fork</goal>
+                          <goal>jar-no-fork</goal>
                       </goals>
-                    </execution>
-                  </executions>
-                </plugin>
-                <plugin>
-                  <groupId>org.apache.maven.plugins</groupId>
-                  <artifactId>maven-surefire-plugin</artifactId>
-                  <version>3.2.2</version>
-                  <configuration>
-                    <argLine>@{argLine} -Dfile.encoding=UTF-8</argLine>
-                  </configuration>
-                  <executions>
-                    <execution>
+                  </execution>
+              </executions>
+          </plugin>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-surefire-plugin</artifactId>
+              <version>3.2.2</version>
+              <configuration>
+                  <argLine>@{argLine} -Dfile.encoding=UTF-8</argLine>
+              </configuration>
+              <executions>
+                  <execution>
                       <id>run-test</id>
                       <phase>test</phase>
                       <goals>
-                        <goal>test</goal>
+                          <goal>test</goal>
                       </goals>
                       <configuration>
-                        <excludes>
-                          <exclude>**/integration/*.java</exclude>
-                          <exclude>**/examples/*.java</exclude>
-                        </excludes>
+                          <excludes>
+                              <exclude>**/integration/*.java</exclude>
+                              <exclude>**/examples/*.java</exclude>
+                          </excludes>
                       </configuration>
-                    </execution>
-                  </executions>
-                </plugin>
-                <plugin>
-                  <artifactId>maven-failsafe-plugin</artifactId>
-                  <version>2.6</version>
-                  <configuration>
-                    <argLine>-Dfile.encoding=UTF-8</argLine>
-                  </configuration>
-                  <executions>
-                    <execution>
+                  </execution>
+              </executions>
+          </plugin>
+          <plugin>
+              <artifactId>maven-failsafe-plugin</artifactId>
+              <version>2.6</version>
+              <configuration>
+                  <argLine>-Dfile.encoding=UTF-8</argLine>
+              </configuration>
+              <executions>
+                  <execution>
                       <goals>
                         <goal>integration-test</goal>
                         <goal>verify</goal>
                       </goals>
                     </execution>
-                  </executions>
-                </plugin>
-                <plugin>
-                  <groupId>org.apache.maven.plugins</groupId>
-                  <artifactId>maven-javadoc-plugin</artifactId>
-                  <version>2.8</version>
-                  <configuration>
-                    <encoding>UTF-8</encoding>
-                    <excludePackageNames>com.aliyun.common.*;*.internal;*.internal.*;*.impl;</excludePackageNames>
-                    <additionalparam>-Xdoclint:none</additionalparam>
-                    <tags>
+              </executions>
+          </plugin>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-javadoc-plugin</artifactId>
+              <version>2.8</version>
+              <configuration>
+                  <encoding>UTF-8</encoding>
+                  <excludePackageNames>com.aliyun.common.*;*.internal;*.internal.*;*.impl;</excludePackageNames>
+                  <additionalparam>-Xdoclint:none</additionalparam>
+                  <tags>
                       <tag>
                         <name>author</name>
                         <placement>X</placement>
                       </tag>
-                    </tags>
-                  </configuration>
-                  <executions>
-                    <execution>
+                  </tags>
+              </configuration>
+              <executions>
+                  <execution>
                       <phase>package</phase>
                       <goals>
                         <goal>jar</goal>
@@ -98,15 +104,15 @@
                       <configuration>
                         <additionalparam>${javadoc.opts}</additionalparam>
                       </configuration>
-                    </execution>
-                  </executions>
-                </plugin>
-                <plugin>
-                  <groupId>org.apache.maven.plugins</groupId>
-                  <artifactId>maven-shade-plugin</artifactId>
-                  <version>3.2.4</version>
-                  <configuration>
-                    <artifactSet>
+                  </execution>
+              </executions>
+          </plugin>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-shade-plugin</artifactId>
+              <version>3.2.4</version>
+              <configuration>
+                  <artifactSet>
                       <excludes>
                         <exclude>commons-logging:commons-logging:jar:</exclude>
                         <exclude>joda-time:joda-time:jar:</exclude>
@@ -125,8 +131,8 @@
                         <exclude>com.google.j2objc:*</exclude>
                         <exclude>org.codehaus.mojo:*</exclude>
                       </excludes>
-                    </artifactSet>
-                    <relocations>
+                  </artifactSet>
+                  <relocations>
                       <relocation>
                         <pattern>com.google.protobuf</pattern>
                         <shadedPattern>com.aliyun.ots.thirdparty.com.google.protobuf</shadedPattern>
@@ -139,85 +145,85 @@
                         <pattern>com.google.flatbuffers</pattern>
                         <shadedPattern>com.aliyun.ots.thirdparty.com.google.flatbuffers</shadedPattern>
                       </relocation>
-                    </relocations>
-                    <shadedClassifierName>jar-with-dependencies</shadedClassifierName>
-                    <shadedArtifactAttached>true</shadedArtifactAttached>
-                  </configuration>
-                  <executions>
-                    <execution>
+                  </relocations>
+                  <shadedClassifierName>jar-with-dependencies</shadedClassifierName>
+                  <shadedArtifactAttached>true</shadedArtifactAttached>
+              </configuration>
+              <executions>
+                  <execution>
                       <phase>package</phase>
                       <goals>
                         <goal>shade</goal>
                       </goals>
-                    </execution>
-                  </executions>
-                </plugin>
-                <plugin>
-                  <artifactId>maven-assembly-plugin</artifactId>
-                  <configuration>
-                    <descriptors>
+                  </execution>
+              </executions>
+          </plugin>
+          <plugin>
+              <artifactId>maven-assembly-plugin</artifactId>
+              <configuration>
+                  <descriptors>
                       <descriptor>src/main/assembly/package.xml</descriptor>
-                    </descriptors>
-                  </configuration>
-                  <executions>
-                    <execution>
+                  </descriptors>
+              </configuration>
+              <executions>
+                  <execution>
                       <id>dwzip</id>
                       <phase>package</phase>
                       <goals>
                         <goal>single</goal>
                       </goals>
-                    </execution>
-                  </executions>
-                </plugin>
-                <plugin>
-                  <groupId>org.jacoco</groupId>
-                  <artifactId>jacoco-maven-plugin</artifactId>
-                  <version>0.8.10</version>
-                  <configuration>
-                    <excludes>
+                  </execution>
+              </executions>
+          </plugin>
+          <plugin>
+              <groupId>org.jacoco</groupId>
+              <artifactId>jacoco-maven-plugin</artifactId>
+              <version>0.8.10</version>
+              <configuration>
+                  <excludes>
                       <exclude>**/examples/*.java</exclude>
-                    </excludes>
-                  </configuration>
-                  <executions>
-                    <execution>
+                  </excludes>
+              </configuration>
+              <executions>
+                  <execution>
                       <id>default-prepare-agent</id>
                       <goals>
                         <goal>prepare-agent</goal>
                       </goals>
-                    </execution>
-                    <execution>
+                  </execution>
+                  <execution>
                       <id>default-report</id>
                       <goals>
                         <goal>report</goal>
                       </goals>
-                    </execution>
-                  </executions>
-                </plugin>
-                <plugin>
-                  <groupId>org.sonatype.plugins</groupId>
-                  <artifactId>nexus-staging-maven-plugin</artifactId>
-                  <version>1.6.3</version>
-                  <extensions>true</extensions>
-                  <configuration>
-                    <serverId>sonatype-nexus-staging</serverId>
-                    <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                  </configuration>
-                </plugin>
-                <plugin>
-                  <groupId>org.apache.maven.plugins</groupId>
-                  <artifactId>maven-gpg-plugin</artifactId>
-                  <version>3.2.1</version>
-                  <executions>
-                    <execution>
+                  </execution>
+              </executions>
+          </plugin>
+          <plugin>
+              <groupId>org.sonatype.plugins</groupId>
+              <artifactId>nexus-staging-maven-plugin</artifactId>
+              <version>1.6.3</version>
+              <extensions>true</extensions>
+              <configuration>
+                  <serverId>sonatype-nexus-staging</serverId>
+                  <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
+                  <autoReleaseAfterClose>true</autoReleaseAfterClose>
+              </configuration>
+          </plugin>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-gpg-plugin</artifactId>
+              <version>3.2.1</version>
+              <executions>
+                  <execution>
                       <id>sign-artifacts</id>
                       <phase>verify</phase>
                       <goals>
                         <goal>sign</goal>
                       </goals>
-                    </execution>
-                  </executions>
-                </plugin>
+                  </execution>
+              </executions>
+          </plugin>
 
               <!-- 其他插件 -->
           </plugins>
@@ -248,8 +254,8 @@
     </developer>
   </developers>
   <scm>
-    <connection>https://help.aliyun.com/document_detail/171666.html?spm=a2c4g.11186623.2.17.5b7836b5ocuTWf#2571775</connection>
-    <developerConnection>https://help.aliyun.com/document_detail/171666.html?spm=a2c4g.11186623.2.17.5b7836b5ocuTWf#2571775</developerConnection>
-    <url>https://help.aliyun.com/document_detail/171666.html?spm=a2c4g.11186623.2.17.5b7836b5ocuTWf#2571775</url>
+    <connection>https://github.com/aliyun/alibaba-pdns-sdk-android.git</connection>
+    <developerConnection>https://github.com/aliyun/alibaba-pdns-sdk-android.git</developerConnection>
+    <url>https://github.com/aliyun/alibaba-pdns-sdk-android/tree/master</url>
   </scm>
 </project>
