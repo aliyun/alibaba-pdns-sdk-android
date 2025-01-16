@@ -6,6 +6,23 @@
   <artifactId>alidns-android-sdk</artifactId>
   <version>2.2.7</version>
   <packaging>aar</packaging>
+  <build>
+      <plugins>
+          <plugin>
+              <groupId>org.sonatype.plugins</groupId>
+              <artifactId>nexus-staging-maven-plugin</artifactId>
+              <version>1.6.3</version>
+              <extensions>true</extensions>
+              <configuration>
+                  <serverId>sonatype-nexus-staging</serverId>
+                  <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
+                  <autoReleaseAfterClose>true</autoReleaseAfterClose>
+              </configuration>
+          </plugin>
+
+              <!-- 其他插件 -->
+          </plugins>
+  </build>
   <distributionManagement>
       <snapshotRepository>
           <id>sonatype-nexus-snapshots</id>
