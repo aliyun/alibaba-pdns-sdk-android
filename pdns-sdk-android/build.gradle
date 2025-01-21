@@ -77,3 +77,5 @@ dependencies {
     embed(name:'alidns-android-sdk-2.2.7',ext:'aar')
 }
 
+apply from: rootProject.file('gradle/scripts/maven-publish-android.gradle')
+
