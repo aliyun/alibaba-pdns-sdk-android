@@ -11,12 +11,18 @@ buildscript {
         classpath 'com.android.tools.build:gradle:3.6.3'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
         classpath 'com.github.kezong:fat-aar:1.3.8'
+        classpath "io.github.gradle-nexus:publish-plugin:1.3.0"
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
+apply plugin: 'io.github.gradle-nexus.publish-plugin'
 
 allprojects {
+    apply plugin: 'maven-publish'
+    group = 'com.alibaba.pdns'
+    version = '2.2.7'
     repositories {
         flatDir{
             dirs 'libs'
@@ -26,7 +32,70 @@ allprojects {
         mavenCentral()
     }
 }
+// java library 没有assembleRelease task，这里定义一个，并代理assemble task
+task assembleRelease
 
+gradle.projectsEvaluated {
+    subprojects { subproject ->
+        if (subproject.tasks.findByPath('assemble') != null) {
+            if (subproject.plugins.hasPlugin('java-library')) {
+                assembleRelease.dependsOn subproject.tasks.assemble
+            }
+        }
+    }
+}
+
+HashMap getSonatypeUserAccount() {
+    HashMap accountMap = new HashMap()
+    def parsedSettingsXml
+    def settingsFile = "/home/admin/settings.xml"
+    def defaultSettingsFile = System.getProperty("user.home") + "/.m2/settings.xml"
+
+    println("============= getSonatypeUserAccount. settingsFile: ${settingsFile}, exists: ${file(settingsFile).exists()} ============= ")
+    println("============= getSonatypeUserAccount. defaultSettingsFile: ${defaultSettingsFile}, exists: ${file(defaultSettingsFile).exists()} ============= ")
+
+    if (file(settingsFile).exists() || file(defaultSettingsFile).exists()) {
+        if (file(settingsFile).exists()) {
+            println("============= getSonatypeUserAccount. settingsFile exists ============= ")
+            parsedSettingsXml = (new XmlParser()).parse(settingsFile);
+        } else if (file(defaultSettingsFile).exists()) {
+            println("============= getSonatypeUserAccount. defaultSettingsFile exists ============= ")
+            parsedSettingsXml = (new XmlParser()).parse(defaultSettingsFile);
+        }
+
+        //noinspection GroovyVariableNotAssigned
+        parsedSettingsXml.servers[0].server.each { server ->
+            if ("releases" == server.id.text()) {
+                accountMap.put("id", server.id.text())
+                accountMap.put("username", server.username.text())
+                accountMap.put("password", server.password.text())
+            }
+        }
+    } else {
+        accountMap.put("id", "releases")
+        accountMap.put("username", "admin")
+        accountMap.put("password", "screct")
+    }
+
+    println("============= getSonatypeUserAccount. username: ${accountMap.get("username")}, pswd: ${accountMap.get("password")} ============= ")
+
+    return accountMap
+
+}
+
+nexusPublishing {
+    repositories {
+        sonatype {
+            nexusUrl = uri("https://s01.oss.sonatype.org/service/local/") //注意地址
+            snapshotRepositoryUrl = uri("https://s01.oss.sonatype.org/content/repositories/snapshots")
+            packageGroup = "com.alibaba.pdns" //groupId，必填
+
+            def accountMap = getSonatypeUserAccount();
+//            username = accountMap.get("username")
+//            password = accountMap.get("password")
+        }
+    }
+}
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
