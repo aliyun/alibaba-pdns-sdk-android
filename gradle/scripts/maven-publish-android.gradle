@@ -1,20 +1,6 @@
 apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
-def moduleName = project.name
-def moduleVersion = project.version
-project.archivesBaseName = moduleName
-
-println "============= publish -->> moduleName: " + moduleName + " ============="
-println "============= publish -->> moduleVersion: " + moduleVersion + " ============="
-
-task androidSourcesJar(type: Jar) {
-    archiveClassifier.set("sources")
-    from android.sourceSets.main.java.source
-    exclude "**/R.class"
-    exclude "**/BuildConfig.class"
-}
-
 publishing {
     publications {
         mavenJava(MavenPublication) {
@@ -23,7 +9,6 @@ publishing {
             version "2.2.7"
 
             artifact("$buildDir/outputs/aar/alidns-android-sdk-2.2.7.aar")
-            artifact androidSourcesJar
 
             pom {
                 name = "pdnsdk"

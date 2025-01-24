@@ -2,12 +2,15 @@
 
 buildscript {
     repositories {
-        mavenLocal()
+
         google()
         mavenCentral()
         gradlePluginPortal()
 
         // aliyun maven
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
         // mirror of google()
         maven { url 'https://maven.aliyun.com/repository/google' }
         // mirror of central & jcenter
@@ -53,54 +56,12 @@ gradle.projectsEvaluated {
     }
 }
 
-HashMap getSonatypeUserAccount() {
-    HashMap accountMap = new HashMap()
-    def parsedSettingsXml
-    def settingsFile = "/home/admin/settings.xml"
-    def defaultSettingsFile = System.getProperty("user.home") + "/.m2/settings.xml"
-
-    println("============= getSonatypeUserAccount. settingsFile: ${settingsFile}, exists: ${file(settingsFile).exists()} ============= ")
-    println("============= getSonatypeUserAccount. defaultSettingsFile: ${defaultSettingsFile}, exists: ${file(defaultSettingsFile).exists()} ============= ")
-
-    if (file(settingsFile).exists() || file(defaultSettingsFile).exists()) {
-        if (file(settingsFile).exists()) {
-            println("============= getSonatypeUserAccount. settingsFile exists ============= ")
-            parsedSettingsXml = (new XmlParser()).parse(settingsFile);
-        } else if (file(defaultSettingsFile).exists()) {
-            println("============= getSonatypeUserAccount. defaultSettingsFile exists ============= ")
-            parsedSettingsXml = (new XmlParser()).parse(defaultSettingsFile);
-        }
-
-        //noinspection GroovyVariableNotAssigned
-        parsedSettingsXml.servers[0].server.each { server ->
-            if ("releases" == server.id.text()) {
-                accountMap.put("id", server.id.text())
-                accountMap.put("username", server.username.text())
-                accountMap.put("password", server.password.text())
-            }
-        }
-    } else {
-        accountMap.put("id", "releases")
-        accountMap.put("username", "admin")
-        accountMap.put("password", "screct")
-    }
-
-    println("============= getSonatypeUserAccount. username: ${accountMap.get("username")}, pswd: ${accountMap.get("password")} ============= ")
-
-    return accountMap
-
-}
-
 nexusPublishing {
     repositories {
         sonatype {
             nexusUrl = uri("https://s01.oss.sonatype.org/service/local/") //注意地址
             snapshotRepositoryUrl = uri("https://s01.oss.sonatype.org/content/repositories/snapshots")
             packageGroup = "com.alibaba.pdns" //groupId，必填
-
-            def accountMap = getSonatypeUserAccount();
-//            username = accountMap.get("username")
-//            password = accountMap.get("password")
         }
     }
 }
