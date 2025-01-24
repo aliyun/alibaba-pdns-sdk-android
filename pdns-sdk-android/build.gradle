@@ -50,7 +50,7 @@ android {
 
     /*********此 gradle 命令编译出 aar 包将 jar 包和 .so 动态库打包在一起用户不用关心里面的动态库注册只集成 aar 即可*********/
     libraryVariants.all { variant ->
-        def newLibName = "alidns-android-sdk-2.2.8.aar"
+        def newLibName = "alidns-android-sdk-2.2.7.aar"
         variant.outputs.all {
             outputFileName = newLibName
         }
