@@ -1,0 +1,45 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:1:1-15:16
+INJECTED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:1:1-15:16
+INJECTED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:1:1-15:16
+	package
+		ADDED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:1:11-37
+		INJECTED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml
+		INJECTED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:2:5-63
+uses-permission#android.permission.INTERNET
+ADDED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:4:5-66
+	android:name
+		ADDED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:5:5-78
+	android:name
+		ADDED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:5:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:6:5-75
+	android:name
+		ADDED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:6:22-73
+application
+ADDED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:8:5-13:19
+uses-library#org.apache.http.legacy
+ADDED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:11:9-87
+	android:required
+		ADDED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:11:61-85
+	android:name
+		ADDED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:11:23-60
+uses-sdk
+INJECTED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml
+INJECTED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml
+INJECTED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml
+INJECTED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml
+		ADDED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml
+		INJECTED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml
+		ADDED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml
+		INJECTED from /Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml
