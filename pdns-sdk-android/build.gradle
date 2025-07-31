@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.kezong.fat-aar'
 android {
     compileSdkVersion 30
-    buildToolsVersion "30"
+    buildToolsVersion "30.0.2"
 
     sourceSets {
         main {
@@ -22,6 +22,7 @@ android {
         externalNativeBuild {
             cmake {
                 cppFlags "" // 默认编译出 4 种 CPU 架构指令平台的 .so 库
+                arguments "-DANDROID_PAGE_SIZE_ALIGNMENT=16384"
             }
         }
     }
@@ -50,7 +51,7 @@ android {
 
     /*********此 gradle 命令编译出 aar 包将 jar 包和 .so 动态库打包在一起用户不用关心里面的动态库注册只集成 aar 即可*********/
     libraryVariants.all { variant ->
-        def newLibName = "alidns-android-sdk-2.2.7.aar"
+        def newLibName = "alidns-android-sdk-2.2.8.aar"
         variant.outputs.all {
             outputFileName = newLibName
         }
@@ -74,7 +75,7 @@ allprojects {
 dependencies {
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'com.android.support:support-annotations:25.1.1'
-    embed(name:'alidns-android-sdk-2.2.7',ext:'aar')
+    embed(name:'alidns-android-sdk-2.2.8',ext:'aar')
 }
 
 apply from: rootProject.file('gradle/scripts/maven-publish-android.gradle')

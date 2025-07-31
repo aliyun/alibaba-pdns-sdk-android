@@ -33,7 +33,7 @@ allprojects { project ->
     apply plugin: 'maven-publish'
 
     group = 'com.alibaba.pdns'
-    version = '2.2.7'
+    version = '2.2.8'
     repositories {
         flatDir{
             dirs 'libs'
