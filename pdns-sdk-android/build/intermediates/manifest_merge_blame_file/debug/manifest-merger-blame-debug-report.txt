@@ -1,0 +1,33 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.alibaba.pdns" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="19"
+6-->/Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="30" />
+7-->/Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml
+8    <!-- 需要配置的权限 -->
+9    <uses-permission android:name="android.permission.INTERNET" />
+9-->/Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:4:5-66
+9-->/Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:4:22-64
+10    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+10-->/Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:5:5-78
+10-->/Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:5:22-76
+11    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+11-->/Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:6:5-75
+11-->/Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:6:22-73
+12
+13    <application>
+13-->/Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:8:5-13:19
+14
+15        <!-- Android9.0网络行为变更：会报Didn`t find class BasicHttpParams异常 -->
+16        <uses-library
+16-->/Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:11:9-87
+17            android:name="org.apache.http.legacy"
+17-->/Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:11:23-60
+18            android:required="false" />
+18-->/Users/xinghao/Downloads/alibaba-pdns-sdk-android-master/pdns-sdk-android/src/main/AndroidManifest.xml:11:61-85
+19    </application>
+20
+21</manifest>

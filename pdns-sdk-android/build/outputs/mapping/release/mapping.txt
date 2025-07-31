@@ -1,0 +1,1335 @@
+# compiler: R8
+# compiler_version: 2.2.71
+# pg_map_id: 4feefc1
+# common_typos_disable
+com.alibaba.pdns.BuildConfig -> com.alibaba.pdns.a:
+    boolean DEBUG -> a
+    java.lang.String BUILD_TYPE -> c
+    java.lang.String LIBRARY_PACKAGE_NAME -> b
+    boolean LOG_DEBUG -> d
+    1:1:void <init>():6:6 -> <init>
+com.alibaba.pdns.DNSResolver -> com.alibaba.pdns.DNSResolver:
+    java.lang.String o -> g
+    java.lang.String n -> f
+    boolean a -> n
+    com.alibaba.pdns.t.a e -> r
+    java.lang.String p -> h
+    int u -> m
+    java.lang.String s -> k
+    boolean t -> l
+    android.content.Context r -> j
+    java.util.concurrent.ScheduledExecutorService g -> t
+    com.alibaba.pdns.DNSResolver q -> i
+    com.alibaba.pdns.s.e b -> o
+    int h -> u
+    boolean i -> a
+    boolean j -> b
+    com.alibaba.pdns.v.a c -> p
+    com.alibaba.pdns.w.a d -> q
+    com.alibaba.pdns.x.b f -> s
+    boolean k -> c
+    java.lang.String m -> e
+    boolean l -> d
+    1:48:void <clinit>() -> <clinit>
+    1:1086:void <init>() -> <init>
+    1:47:void Init(android.content.Context,java.lang.String,java.lang.String,java.lang.String) -> Init
+    1:1:com.alibaba.pdns.s.e a(com.alibaba.pdns.DNSResolver) -> a
+    2:22:void a() -> a
+    23:207:java.lang.String[] a(java.lang.String,boolean,boolean) -> a
+    208:286:com.alibaba.pdns.model.a a(java.lang.String,boolean) -> a
+    287:312:java.lang.String[] a(java.lang.String,java.lang.String,boolean) -> a
+    313:325:com.alibaba.pdns.model.a a(java.lang.String,java.lang.String,boolean,boolean) -> a
+    326:328:void a(java.lang.String,java.lang.String) -> a
+    1:19:com.alibaba.pdns.DomainInfo[] b(java.lang.String,java.lang.String) -> b
+    20:20:java.util.concurrent.ScheduledExecutorService b() -> b
+    1:25:void c() -> c
+    26:48:java.lang.String[] c(java.lang.String,java.lang.String) -> c
+    1:4:void clear() -> clear
+    1:24:void clearHostCache(java.lang.String[]) -> clearHostCache
+    1:3:void d(java.lang.String,java.lang.String) -> d
+    4:18:void d() -> d
+    1:6:void e() -> e
+    1:35:void f() -> f
+    1:1:java.lang.String getAccessKeyId() -> getAccessKeyId
+    1:1:java.lang.String getAccessKeySecret() -> getAccessKeySecret
+    1:1:java.lang.String getAccountId() -> getAccountId
+    1:1:com.alibaba.pdns.s.e getDnsCacheManager() -> getDnsCacheManager
+    1:10:com.alibaba.pdns.model.b getDomainStats(java.lang.String,java.lang.String,java.lang.String) -> getDomainStats
+    1:1:java.lang.String getEdnsSubnet() -> getEdnsSubnet
+    1:1:boolean getEnableCache() -> getEnableCache
+    1:13:java.lang.String getIPV4ByHost(java.lang.String) -> getIPV4ByHost
+    1:8:com.alibaba.pdns.DomainInfo getIPV4DInfoByUrl(java.lang.String) -> getIPV4DInfoByUrl
+    1:13:java.lang.String getIPV6ByHost(java.lang.String) -> getIPV6ByHost
+    1:8:com.alibaba.pdns.DomainInfo getIPV6DInfoByUrl(java.lang.String) -> getIPV6DInfoByUrl
+    1:3:java.lang.String[] getIPsV4ByHost(java.lang.String) -> getIPsV4ByHost
+    1:3:com.alibaba.pdns.DomainInfo[] getIPsV4DInfoByUrl(java.lang.String) -> getIPsV4DInfoByUrl
+    1:3:java.lang.String[] getIPsV6ByHost(java.lang.String) -> getIPsV6ByHost
+    1:3:com.alibaba.pdns.DomainInfo[] getIPsV6DInfoByUrl(java.lang.String) -> getIPsV6DInfoByUrl
+    1:8:com.alibaba.pdns.DNSResolver getInstance() -> getInstance
+    1:3:java.lang.String[] getIpsByHost(java.lang.String) -> getIpsByHost
+    1:3:java.lang.String[] getIpsByHostFromCache(java.lang.String,boolean) -> getIpsByHostFromCache
+    1:3:java.lang.String[] getIpv4ByHostFromCache(java.lang.String,boolean) -> getIpv4ByHostFromCache
+    1:3:java.lang.String[] getIpv6ByHostFromCache(java.lang.String,boolean) -> getIpv6ByHostFromCache
+    1:1:int getMaxNegativeCache() -> getMaxNegativeCache
+    1:1:int getMaxTtlCache() -> getMaxTtlCache
+    1:1:int getMinTtlCache() -> getMinTtlCache
+    1:16:com.alibaba.pdns.model.a getPDnsData(java.lang.String,java.lang.String) -> getPDnsData
+    1:23:void getPDnsDataAsync(java.lang.String,java.lang.String,int) -> getPDnsDataAsync
+    1:7:java.lang.String getRequestReportInfo() -> getRequestReportInfo
+    1:1:java.lang.String getSchemaType() -> getSchemaType
+    1:1:java.lang.String getSessionId() -> getSessionId
+    1:1:int getSpeedPort() -> getSpeedPort
+    1:1:boolean iSEnableShort() -> iSEnableShort
+    1:1:boolean isEnableIPv6() -> isEnableIPv6
+    1:1:boolean isEnableLocalDns() -> isEnableLocalDns
+    1:1:boolean isEnableSpeedTest() -> isEnableSpeedTest
+    1:10:boolean isNetworkChanged() -> isNetworkChanged
+    1:1:boolean ispEnable() -> ispEnable
+    1:12:void onNetworkStatusChanged() -> onNetworkStatusChanged
+    1:15:void preLoadDomains(java.lang.String,java.lang.String[]) -> preLoadDomains
+    16:33:void preLoadDomains(java.lang.String[]) -> preLoadDomains
+    1:4:void setAccessKeyId(java.lang.String) -> setAccessKeyId
+    1:4:void setAccessKeySecret(java.lang.String) -> setAccessKeySecret
+    1:1:void setAccountId(java.lang.String) -> setAccountId
+    1:5:void setEdnsSubnet(java.lang.String) -> setEdnsSubnet
+    1:4:void setEnableCache(boolean) -> setEnableCache
+    1:2:void setEnableIPv6(boolean) -> setEnableIPv6
+    1:2:void setEnableLocalDns(boolean) -> setEnableLocalDns
+    1:7:void setEnableLogger(boolean) -> setEnableLogger
+    1:2:void setEnableShort(boolean) -> setEnableShort
+    1:2:void setEnableSpeedTest(boolean) -> setEnableSpeedTest
+    1:2:void setIgnoreNetworkChanges(boolean) -> setIgnoreNetworkChanges
+    1:2:void setImmutableCacheEnable(boolean) -> setImmutableCacheEnable
+    1:2:void setIspEnable(boolean) -> setIspEnable
+    1:11:void setKeepAliveDomains(java.lang.String[]) -> setKeepAliveDomains
+    1:4:void setMaxCacheSize(int) -> setMaxCacheSize
+    1:2:void setMaxNegativeCache(int) -> setMaxNegativeCache
+    1:8:void setMaxTtlCache(int) -> setMaxTtlCache
+    1:5:void setMinTtlCache(int) -> setMinTtlCache
+    1:2:void setSchemaType(java.lang.String) -> setSchemaType
+    1:2:void setSpeedPort(int) -> setSpeedPort
+    1:2:void setTimeout(int) -> setTimeout
+com.alibaba.pdns.DNSResolver$a -> com.alibaba.pdns.DNSResolver$a:
+    1:1:void <init>(com.alibaba.pdns.DNSResolver,java.lang.String,java.lang.String) -> <init>
+    1:7:void run() -> run
+com.alibaba.pdns.DNSResolver$b -> com.alibaba.pdns.DNSResolver$b:
+    1:1:void <init>(com.alibaba.pdns.DNSResolver) -> <init>
+    1:3:java.lang.Thread newThread(java.lang.Runnable) -> newThread
+com.alibaba.pdns.DNSResolver$c -> com.alibaba.pdns.DNSResolver$c:
+    1:1:void <init>(com.alibaba.pdns.DNSResolver) -> <init>
+    1:30:void run() -> run
+com.alibaba.pdns.DomainInfo -> com.alibaba.pdns.DomainInfo:
+    1:49:void <init>(java.lang.String,java.lang.String,java.lang.String) -> <init>
+    1:2:com.alibaba.pdns.DomainInfo domainInfoFactory(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> domainInfoFactory
+    3:5:com.alibaba.pdns.DomainInfo[] domainInfoFactory(java.lang.String[],java.lang.String,java.lang.String,java.lang.String) -> domainInfoFactory
+    1:7:java.lang.String toString() -> toString
+com.alibaba.pdns.JsonUitl -> com.alibaba.pdns.JsonUitl:
+    1:1:void <clinit>() -> <clinit>
+    1:1:void <init>() -> <init>
+    1:5:java.util.List a(java.lang.String,java.lang.Class) -> a
+    1:1:java.lang.Object b(java.lang.String,java.lang.Class) -> b
+    1:1:java.lang.String objectToString(java.lang.Object) -> objectToString
+com.alibaba.pdns.a -> com.alibaba.pdns.b:
+# {"id":"sourceFile","fileName":"AddressMode.java"}
+    1:1:void <init>() -> <init>
+com.alibaba.pdns.b -> com.alibaba.pdns.c:
+# {"id":"sourceFile","fileName":"AppConfigUtil.java"}
+    1:1:void <init>() -> <init>
+    1:1:void a(android.content.Context) -> a
+    2:6:java.io.File a() -> a
+    1:22:java.lang.String b() -> b
+    1:24:java.lang.String c() -> c
+    1:2:android.content.Context d() -> d
+    1:3:java.io.File e() -> e
+    1:9:java.lang.String f() -> f
+com.alibaba.pdns.c -> com.alibaba.pdns.d:
+# {"id":"sourceFile","fileName":"Base64.java"}
+    1:1:void <init>() -> <init>
+    1:11:com.alibaba.pdns.c$e a(int,byte[]) -> a
+    12:12:com.alibaba.pdns.c$c a() -> a
+    1:1:com.alibaba.pdns.c$e b() -> b
+    1:1:com.alibaba.pdns.c$c c() -> c
+    1:1:com.alibaba.pdns.c$e d() -> d
+    1:1:com.alibaba.pdns.c$c e() -> e
+    1:1:com.alibaba.pdns.c$e f() -> f
+com.alibaba.pdns.c$a -> com.alibaba.pdns.d$a:
+# {"id":"sourceFile","fileName":"Base64.java"}
+com.alibaba.pdns.c$b -> com.alibaba.pdns.d$b:
+# {"id":"sourceFile","fileName":"Base64.java"}
+    1:19:void <init>(java.io.InputStream,int[],boolean) -> <init>
+    1:4:int available() -> available
+    1:3:void close() -> close
+    1:1:int read() -> read
+    2:113:int read(byte[],int,int) -> read
+com.alibaba.pdns.c$c -> com.alibaba.pdns.d$c:
+# {"id":"sourceFile","fileName":"Base64.java"}
+    int[] d -> b
+    com.alibaba.pdns.c$c f -> d
+    com.alibaba.pdns.c$c e -> c
+    com.alibaba.pdns.c$c g -> e
+    boolean a -> f
+    boolean b -> g
+    int[] c -> a
+    1:24:void <clinit>() -> <clinit>
+    1:3:void <init>(boolean,boolean) -> <init>
+    1:1:int[] a() -> a
+    2:5:byte[] a(byte[]) -> a
+    6:6:byte[] a(java.lang.String) -> a
+    7:12:int a(byte[],byte[]) -> a
+    13:32:java.nio.ByteBuffer a(java.nio.ByteBuffer) -> a
+    33:34:java.io.InputStream a(java.io.InputStream) -> a
+    35:69:int a(byte[],int,int) -> a
+    70:124:int a(byte[],int,int,byte[]) -> a
+com.alibaba.pdns.c$d -> com.alibaba.pdns.d$d:
+# {"id":"sourceFile","fileName":"Base64.java"}
+    1:18:void <init>(java.io.OutputStream,char[],byte[],int,boolean) -> <init>
+    1:3:void a() -> a
+    1:21:void close() -> close
+    1:3:void write(int) -> write
+    4:47:void write(byte[],int,int) -> write
+com.alibaba.pdns.c$e -> com.alibaba.pdns.d$e:
+# {"id":"sourceFile","fileName":"Base64.java"}
+    char[] e -> a
+    char[] f -> b
+    boolean c -> j
+    com.alibaba.pdns.c$e j -> f
+    boolean d -> k
+    com.alibaba.pdns.c$e i -> e
+    int b -> i
+    byte[] a -> h
+    com.alibaba.pdns.c$e k -> g
+    byte[] h -> d
+    int g -> c
+    1:27:void <clinit>() -> <clinit>
+    1:1:void <init>(boolean,byte[],int,boolean,com.alibaba.pdns.c$a) -> <init>
+    2:6:void <init>(boolean,byte[],int,boolean) -> <init>
+    1:8:int a(int) -> a
+    9:13:byte[] a(byte[]) -> a
+    14:19:int a(byte[],byte[]) -> a
+    20:39:java.nio.ByteBuffer a(java.nio.ByteBuffer) -> a
+    40:41:java.io.OutputStream a(java.io.OutputStream) -> a
+    42:44:com.alibaba.pdns.c$e a() -> a
+    45:86:int a(byte[],int,int,byte[]) -> a
+    1:1:char[] b() -> b
+    2:3:java.lang.String b(byte[]) -> b
+    1:1:char[] c() -> c
+com.alibaba.pdns.d -> com.alibaba.pdns.e:
+# {"id":"sourceFile","fileName":"BuildConfig.java"}
+    1:1:void <init>() -> <init>
+com.alibaba.pdns.e -> com.alibaba.pdns.f:
+# {"id":"sourceFile","fileName":"CheckTempIpModelNotNull.java"}
+    1:1:void <init>() -> <init>
+    1:1:boolean a(java.util.concurrent.CopyOnWriteArrayList) -> a
+    2:2:boolean a(java.util.Map) -> a
+    3:3:boolean a(java.lang.String[]) -> a
+    4:4:boolean a(java.lang.String,java.lang.String) -> a
+    5:5:boolean a(java.lang.String) -> a
+    1:1:boolean b(java.util.concurrent.CopyOnWriteArrayList) -> b
+com.alibaba.pdns.f -> com.alibaba.pdns.g:
+# {"id":"sourceFile","fileName":"DNSResolverConfig.java"}
+    1:311:void <clinit>() -> <clinit>
+    1:1:void <init>() -> <init>
+    1:15:void a(java.lang.String[],java.lang.String) -> a
+    16:24:void a(boolean) -> a
+    25:114:com.alibaba.pdns.model.f a(java.lang.Object) -> a
+    115:128:com.alibaba.pdns.model.f a(java.util.concurrent.CopyOnWriteArrayList) -> a
+    129:159:java.util.concurrent.CopyOnWriteArrayList a(java.lang.String) -> a
+    160:169:java.lang.String a(java.lang.String,java.lang.String,java.lang.String,boolean) -> a
+    170:183:void a(com.alibaba.pdns.model.f) -> a
+    184:195:float a(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    196:207:int a(java.lang.String,java.lang.String,java.lang.String) -> a
+    208:215:java.lang.String a(java.lang.String,java.lang.String,java.lang.String,boolean,long) -> a
+    216:219:void a() -> a
+    220:225:void a(com.alibaba.pdns.model.f,float) -> a
+    1:7:void b() -> b
+    8:23:com.alibaba.pdns.model.f b(java.util.concurrent.CopyOnWriteArrayList) -> b
+    24:88:com.alibaba.pdns.model.f b(java.lang.Object) -> b
+    89:97:com.alibaba.pdns.model.f b(java.lang.String) -> b
+    98:109:int b(java.lang.String,java.lang.String,java.lang.String) -> b
+    110:118:void b(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> b
+    1:5:void c() -> c
+    6:8:com.alibaba.pdns.model.f c(java.lang.Object) -> c
+    9:16:void c(java.util.concurrent.CopyOnWriteArrayList) -> c
+    1:3:void d() -> d
+    4:6:void d(java.util.concurrent.CopyOnWriteArrayList) -> d
+    1:4:boolean e() -> e
+    1:14:boolean f() -> f
+    1:4:boolean g() -> g
+com.alibaba.pdns.f$a -> com.alibaba.pdns.g$a:
+# {"id":"sourceFile","fileName":"DNSResolverConfig.java"}
+    1:1:void <init>() -> <init>
+    1:30:void run() -> run
+com.alibaba.pdns.f$b -> com.alibaba.pdns.g$b:
+# {"id":"sourceFile","fileName":"DNSResolverConfig.java"}
+    1:1:void <init>() -> <init>
+    1:12:void run() -> run
+com.alibaba.pdns.g -> com.alibaba.pdns.h:
+# {"id":"sourceFile","fileName":"DNSResolverReport.java"}
+    1:1:void <clinit>() -> <clinit>
+    1:1:void <init>() -> <init>
+    1:1:boolean a() -> a
+    2:51:void a(com.alibaba.pdns.model.a,java.util.concurrent.CopyOnWriteArrayList) -> a
+    52:52:boolean a(java.lang.String) -> a
+    53:115:void a(com.alibaba.pdns.model.e,int) -> a
+    1:31:java.util.concurrent.CopyOnWriteArrayList b() -> b
+    1:18:java.lang.String c() -> c
+    1:4:boolean d() -> d
+    1:1:void e() -> e
+    1:12:void f() -> f
+com.alibaba.pdns.g$a -> com.alibaba.pdns.h$a:
+# {"id":"sourceFile","fileName":"DNSResolverReport.java"}
+    1:1:void <init>() -> <init>
+    1:6:void run() -> run
+com.alibaba.pdns.h -> com.alibaba.pdns.i:
+# {"id":"sourceFile","fileName":"DNSTempIpScore.java"}
+    1:5:void <init>() -> <init>
+    1:21:void a(java.util.concurrent.CopyOnWriteArrayList) -> a
+    1:6:java.util.concurrent.CopyOnWriteArrayList b(java.util.concurrent.CopyOnWriteArrayList) -> b
+    1:2:java.util.concurrent.CopyOnWriteArrayList c(java.util.concurrent.CopyOnWriteArrayList) -> c
+com.alibaba.pdns.h$a -> com.alibaba.pdns.i$a:
+# {"id":"sourceFile","fileName":"DNSTempIpScore.java"}
+    1:1:void <init>(com.alibaba.pdns.h) -> <init>
+    1:1:int compare(java.lang.Object,java.lang.Object) -> compare
+    2:4:int compare(com.alibaba.pdns.model.f,com.alibaba.pdns.model.f) -> compare
+com.alibaba.pdns.i -> com.alibaba.pdns.j:
+# {"id":"sourceFile","fileName":"DNSUhfHttpReport.java"}
+    1:1:void <init>() -> <init>
+    1:1:com.alibaba.pdns.model.b a(com.alibaba.pdns.model.b) -> a
+    2:2:java.lang.String a(com.alibaba.pdns.model.d,java.util.Set) -> a
+    3:96:void a(java.lang.String,java.lang.String,com.alibaba.pdns.model.b,com.alibaba.pdns.model.b) -> a
+    97:100:void a(com.alibaba.pdns.model.d,com.alibaba.pdns.model.b,int,java.lang.String,java.lang.String) -> a
+    101:104:void a(com.alibaba.pdns.model.b,com.alibaba.pdns.model.b) -> a
+    1:25:java.lang.String b(com.alibaba.pdns.model.d,java.util.Set) -> b
+    26:35:com.alibaba.pdns.model.b b(com.alibaba.pdns.model.b) -> b
+com.alibaba.pdns.i$a -> com.alibaba.pdns.j$a:
+# {"id":"sourceFile","fileName":"DNSUhfHttpReport.java"}
+    1:1:void <init>(com.alibaba.pdns.model.d,com.alibaba.pdns.model.b,java.lang.String,java.lang.String,int) -> <init>
+    1:124:void run() -> run
+com.alibaba.pdns.j -> com.alibaba.pdns.k:
+# {"id":"sourceFile","fileName":"EncryptUtils.java"}
+    1:1:void <init>() -> <init>
+    1:8:java.lang.String a(java.lang.String,java.lang.String) -> a
+    9:14:java.lang.String a(byte[]) -> a
+com.alibaba.pdns.jni.Jni -> com.alibaba.pdns.jni.Jni:
+    1:1:void <init>() -> <init>
+com.alibaba.pdns.jni.a -> com.alibaba.pdns.jni.a:
+# {"id":"sourceFile","fileName":"JniWrapper.java"}
+    1:4:void <clinit>() -> <clinit>
+    1:1:void <init>() -> <init>
+    1:4:int a() -> a
+com.alibaba.pdns.k -> com.alibaba.pdns.l:
+# {"id":"sourceFile","fileName":"HttpDispatcher.java"}
+    1:12:void <clinit>() -> <clinit>
+    1:1:void <init>() -> <init>
+    1:1:java.util.concurrent.ExecutorService a() -> a
+com.alibaba.pdns.k$a -> com.alibaba.pdns.l$a:
+# {"id":"sourceFile","fileName":"HttpDispatcher.java"}
+    1:1:void <init>() -> <init>
+    1:2:java.lang.Thread newThread(java.lang.Runnable) -> newThread
+com.alibaba.pdns.l -> com.alibaba.pdns.m:
+# {"id":"sourceFile","fileName":"IPConvert.java"}
+    1:1:void <init>() -> <init>
+    1:162:java.lang.String a(java.lang.String) -> a
+    1:16:java.lang.String b(java.lang.String) -> b
+    1:17:byte[] c(java.lang.String) -> c
+com.alibaba.pdns.log.HttpDnsLog -> com.alibaba.pdns.log.HttpDnsLog:
+    1:1:void <clinit>() -> <clinit>
+    1:1:void <init>() -> <init>
+    1:3:void a(java.lang.Throwable) -> a
+    1:3:void d(java.lang.String):4:6 -> d
+    1:3:void e(java.lang.String):4:6 -> e
+    4:8:void e(java.lang.String,java.lang.Throwable):10:14 -> e
+    1:1:void enable(boolean) -> enable
+    1:3:void i(java.lang.String):4:6 -> i
+    1:1:boolean isPrint() -> isPrint
+    1:1:void removeLogger(com.alibaba.pdns.log.ILogger) -> removeLogger
+    1:1:void setLogger(com.alibaba.pdns.log.ILogger) -> setLogger
+    1:3:void w(java.lang.String):4:6 -> w
+    4:8:void w(java.lang.String,java.lang.Throwable):10:14 -> w
+    1:10:java.lang.String wrap(java.lang.String[]) -> wrap
+com.alibaba.pdns.log.ILogger -> com.alibaba.pdns.log.ILogger:
+    1:1:void <init>() -> <init>
+com.alibaba.pdns.log.Logger -> com.alibaba.pdns.log.Logger:
+    1:1:void <init>() -> <init>
+    1:1:int getLogLevel() -> getLogLevel
+    1:2:void print(java.lang.String) -> print
+    1:1:void setLogLevel(int) -> setLogLevel
+com.alibaba.pdns.m -> com.alibaba.pdns.n:
+# {"id":"sourceFile","fileName":"IpAddressModel.java"}
+    1:9:void <init>() -> <init>
+    1:1:java.util.List a() -> a
+    2:2:void a(java.lang.String) -> a
+    1:1:java.util.List b() -> b
+    2:2:void b(java.lang.String) -> b
+com.alibaba.pdns.model.DomainRttModel -> com.alibaba.pdns.model.DomainRttModel:
+    1:1:void <init>() -> <init>
+    1:1:java.lang.String getAccountId() -> getAccountId
+    1:1:java.lang.String getApiToken() -> getApiToken
+    1:1:java.lang.String getApiUser() -> getApiUser
+    1:1:java.util.concurrent.CopyOnWriteArrayList getItems() -> getItems
+    1:1:java.lang.String getTransactionId() -> getTransactionId
+    1:1:void setAccountId(java.lang.String) -> setAccountId
+    1:1:void setApiToken(java.lang.String) -> setApiToken
+    1:1:void setApiUser(java.lang.String) -> setApiUser
+    1:1:void setItems(java.util.concurrent.CopyOnWriteArrayList) -> setItems
+    1:1:void setTransactionId(java.lang.String) -> setTransactionId
+com.alibaba.pdns.model.DomainRttModel$ItemsJosnBean -> com.alibaba.pdns.model.DomainRttModel$ItemsJosnBean:
+    1:1:void <init>() -> <init>
+    1:1:java.lang.String getDetectDomainName() -> getDetectDomainName
+    1:1:java.lang.String getDetectIp() -> getDetectIp
+    1:1:int getDetectIpVersion() -> getDetectIpVersion
+    1:1:int getDetectPort() -> getDetectPort
+    1:1:java.lang.String getDetectProtocol() -> getDetectProtocol
+    1:1:double getLatency() -> getLatency
+    1:1:java.lang.String getPlatform() -> getPlatform
+    1:1:java.lang.String getSdkVersion() -> getSdkVersion
+    1:1:java.lang.String getTermIp() -> getTermIp
+    1:1:long getTimestamp() -> getTimestamp
+    1:1:void setDetectDomainName(java.lang.String) -> setDetectDomainName
+    1:1:void setDetectIp(java.lang.String) -> setDetectIp
+    1:1:void setDetectIpVersion(int) -> setDetectIpVersion
+    1:1:void setDetectPort(int) -> setDetectPort
+    1:1:void setDetectProtocol(java.lang.String) -> setDetectProtocol
+    1:1:void setLatency(double) -> setLatency
+    1:1:void setPlatform(java.lang.String) -> setPlatform
+    1:1:void setSdkVersion(java.lang.String) -> setSdkVersion
+    1:1:void setTermIp(java.lang.String) -> setTermIp
+    1:1:void setTimestamp(long) -> setTimestamp
+com.alibaba.pdns.model.DomainUhfReportModel -> com.alibaba.pdns.model.DomainUhfReportModel:
+    1:1:void <init>() -> <init>
+com.alibaba.pdns.model.ReportDomanInfo -> com.alibaba.pdns.model.ReportDomanInfo:
+    1:1:void <init>() -> <init>
+    1:1:java.lang.String getAccountId() -> getAccountId
+    1:1:java.lang.String getApiToken() -> getApiToken
+    1:1:java.lang.String getApiUser() -> getApiUser
+    1:1:long getCallPreloadMethodCount() -> getCallPreloadMethodCount
+    1:1:long getCallResolveMethodCount() -> getCallResolveMethodCount
+    1:1:java.util.concurrent.CopyOnWriteArrayList getData() -> getData
+    1:1:java.lang.String getPlatform() -> getPlatform
+    1:1:java.lang.String getSdkVersion() -> getSdkVersion
+    1:1:java.lang.String getTermIp() -> getTermIp
+    1:1:int getTermIpType() -> getTermIpType
+    1:1:long getTimestamp() -> getTimestamp
+    1:1:java.lang.String getTransactionId() -> getTransactionId
+    1:1:void setAccountId(java.lang.String) -> setAccountId
+    1:1:void setApiToken(java.lang.String) -> setApiToken
+    1:1:void setApiUser(java.lang.String) -> setApiUser
+    1:1:void setCallPreloadMethodCount(long) -> setCallPreloadMethodCount
+    1:1:void setCallResolveMethodCount(long) -> setCallResolveMethodCount
+    1:1:void setData(java.util.concurrent.CopyOnWriteArrayList) -> setData
+    1:1:void setPlatform(java.lang.String) -> setPlatform
+    1:1:void setSdkVersion(java.lang.String) -> setSdkVersion
+    1:1:void setTermIp(java.lang.String) -> setTermIp
+    1:1:void setTermIpType(int) -> setTermIpType
+    1:1:void setTimestamp(long) -> setTimestamp
+    1:1:void setTransactionId(java.lang.String) -> setTransactionId
+com.alibaba.pdns.model.ReportDomanInfo$DataJsonBean -> com.alibaba.pdns.model.ReportDomanInfo$DataJsonBean:
+    1:1:void <init>() -> <init>
+    1:1:float getAvgRtt() -> getAvgRtt
+    1:1:long getHttpabnormalCount() -> getHttpabnormalCount
+    1:1:java.lang.String getIsp() -> getIsp
+    1:1:float getMaxRtt() -> getMaxRtt
+    1:1:long getNonetworkCount() -> getNonetworkCount
+    1:1:long getTimeoutCount() -> getTimeoutCount
+    1:1:long getUtfNetWorkErroNum() -> getUtfNetWorkErroNum
+    1:1:void setAvgRtt(float) -> setAvgRtt
+    1:1:void setDegradeLocalDnsCount(long) -> setDegradeLocalDnsCount
+    1:1:void setDomainName(java.lang.String) -> setDomainName
+    1:1:void setHitDnsCacheCount(long) -> setHitDnsCacheCount
+    1:1:void setHttpabnormalCount(long) -> setHttpabnormalCount
+    1:1:void setIsp(java.lang.String) -> setIsp
+    1:1:void setLocalDnsResolveErrCount(long) -> setLocalDnsResolveErrCount
+    1:1:void setMaxRtt(float) -> setMaxRtt
+    1:1:void setNonetworkCount(long) -> setNonetworkCount
+    1:1:void setPermissionErrCount(long) -> setPermissionErrCount
+    1:1:void setQueryType(int) -> setQueryType
+    1:1:void setRecursiveReqCount(long) -> setRecursiveReqCount
+    1:1:void setReqParameterErrCount(long) -> setReqParameterErrCount
+    1:1:void setReqPathErrCount(long) -> setReqPathErrCount
+    1:1:void setReqServerErrCount(long) -> setReqServerErrCount
+    1:1:void setReqTimeoutCount(long) -> setReqTimeoutCount
+    1:1:void setResolveSuccessCount(long) -> setResolveSuccessCount
+    1:1:void setTimeoutCount(long) -> setTimeoutCount
+    1:1:void setUtfNetWorkErroNum(long) -> setUtfNetWorkErroNum
+com.alibaba.pdns.model.a -> com.alibaba.pdns.model.a:
+# {"id":"sourceFile","fileName":"DomainModel.java"}
+    1:73:void <init>() -> <init>
+    1:37:java.lang.String a() -> a
+    1:20:java.lang.String toString() -> toString
+com.alibaba.pdns.model.b -> com.alibaba.pdns.model.b:
+# {"id":"sourceFile","fileName":"DomainStatistical.java"}
+    java.util.concurrent.atomic.AtomicLong o -> q
+    java.util.concurrent.atomic.AtomicLong n -> p
+    java.util.concurrent.atomic.AtomicLong k -> m
+    java.util.concurrent.atomic.AtomicLong j -> l
+    java.util.concurrent.atomic.AtomicLong m -> o
+    java.util.concurrent.atomic.AtomicLong l -> n
+    java.util.concurrent.atomic.AtomicLong g -> i
+    java.util.concurrent.atomic.AtomicLong f -> h
+    java.util.concurrent.atomic.AtomicLong i -> k
+    java.util.concurrent.atomic.AtomicLong h -> j
+    java.lang.String q -> s
+    java.lang.String p -> r
+    java.util.concurrent.atomic.AtomicLong u -> a
+    java.util.concurrent.atomic.AtomicInteger c -> e
+    java.util.concurrent.atomic.AtomicInteger b -> d
+    java.util.concurrent.atomic.AtomicInteger e -> g
+    java.util.concurrent.atomic.AtomicLong v -> b
+    java.util.concurrent.atomic.AtomicInteger d -> f
+    java.util.concurrent.atomic.AtomicInteger a -> c
+    float t -> v
+    float s -> u
+    int r -> t
+    1:3:void <clinit>() -> <clinit>
+    1:31:void <init>() -> <init>
+    1:1:float a() -> a
+    2:2:void a(float) -> a
+    3:3:void a(java.lang.String) -> a
+    4:4:void a(int) -> a
+    1:1:void b(float) -> b
+    2:2:void b(java.lang.String) -> b
+    3:3:java.lang.String b() -> b
+    1:1:java.lang.String c() -> c
+    1:1:float d() -> d
+    1:1:int e() -> e
+com.alibaba.pdns.model.c -> com.alibaba.pdns.model.c:
+# {"id":"sourceFile","fileName":"IpModel.java"}
+    1:89:void <init>() -> <init>
+    1:30:java.lang.String a() -> a
+    1:6:java.lang.String toString() -> toString
+com.alibaba.pdns.model.d -> com.alibaba.pdns.model.d:
+# {"id":"sourceFile","fileName":"PDnsPack.java"}
+    1:48:void <init>() -> <init>
+com.alibaba.pdns.model.d$a -> com.alibaba.pdns.model.d$a:
+# {"id":"sourceFile","fileName":"PDnsPack.java"}
+    1:14:void <init>() -> <init>
+    1:3:java.lang.String toString() -> toString
+com.alibaba.pdns.model.e -> com.alibaba.pdns.model.e:
+# {"id":"sourceFile","fileName":"ResponseModel.java"}
+    1:1:void <init>() -> <init>
+    1:1:long a() -> a
+    2:2:void a(long) -> a
+    3:3:void a(int) -> a
+    4:4:void a(com.alibaba.pdns.model.b) -> a
+    5:5:void a(float) -> a
+    6:6:void a(java.lang.String) -> a
+    1:1:java.lang.String b() -> b
+    1:1:float c() -> c
+    1:1:com.alibaba.pdns.model.b d() -> d
+    1:1:int e() -> e
+com.alibaba.pdns.model.f -> com.alibaba.pdns.model.f:
+# {"id":"sourceFile","fileName":"TempIpModel.java"}
+    1:22:void <init>() -> <init>
+    1:1:void a(int) -> a
+    2:2:java.lang.String a() -> a
+    3:3:void a(java.lang.String) -> a
+    4:4:void a(java.lang.Long) -> a
+    5:5:void a(float) -> a
+    1:1:java.lang.String b() -> b
+    2:2:void b(java.lang.String) -> b
+    3:3:void b(java.lang.Long) -> b
+    1:1:java.lang.String c() -> c
+    2:2:void c(java.lang.String) -> c
+    1:1:java.lang.String d() -> d
+    2:2:void d(java.lang.String) -> d
+    1:1:java.lang.String e() -> e
+    2:2:void e(java.lang.String) -> e
+    1:1:java.lang.String f() -> f
+    2:2:void f(java.lang.String) -> f
+    1:1:void g(java.lang.String) -> g
+    2:2:float g() -> g
+    1:1:void h(java.lang.String) -> h
+    2:2:int h() -> h
+    1:1:java.lang.Long i() -> i
+    1:1:java.lang.Long j() -> j
+    1:1:java.lang.String k() -> k
+    1:1:java.lang.String l() -> l
+com.alibaba.pdns.n -> com.alibaba.pdns.o:
+# {"id":"sourceFile","fileName":"NetworkStack.java"}
+    1:1:void <init>() -> <init>
+    1:1:int a() -> a
+com.alibaba.pdns.net.HttpRequestAysnc -> com.alibaba.pdns.net.HttpRequestAysnc:
+    java.lang.String f -> g
+    com.alibaba.pdns.model.e g -> h
+    com.alibaba.pdns.model.f d -> e
+    boolean e -> f
+    java.lang.String h -> a
+    int a -> b
+    java.lang.String b -> c
+    java.lang.String c -> d
+    1:1:void <clinit>() -> <clinit>
+    1:16:void <init>(java.lang.String,com.alibaba.pdns.model.f,java.lang.String,boolean,java.lang.String,com.alibaba.pdns.model.e) -> <init>
+    1:25:java.lang.String a(java.lang.String,com.alibaba.pdns.model.e,int) -> a
+    26:40:java.lang.String a(java.lang.String,int) -> a
+    1:1:java.lang.Object call() -> call
+    2:100:com.alibaba.pdns.model.e call() -> call
+com.alibaba.pdns.net.HttpTrustManager -> com.alibaba.pdns.net.HttpTrustManager:
+    1:1:void <init>() -> <init>
+com.alibaba.pdns.net.HttpsHostnameVerifier -> com.alibaba.pdns.net.HttpsHostnameVerifier:
+    1:2:void <init>(java.lang.String) -> <init>
+    1:1:boolean verify(java.lang.String,javax.net.ssl.SSLSession) -> verify
+com.alibaba.pdns.net.HttpsNotCheckVerifier -> com.alibaba.pdns.net.HttpsNotCheckVerifier:
+    1:1:void <init>() -> <init>
+com.alibaba.pdns.net.a -> com.alibaba.pdns.net.a:
+# {"id":"sourceFile","fileName":"HttpConfigRequest.java"}
+    1:1:void <init>() -> <init>
+    1:24:void a(java.lang.String,java.lang.String) -> a
+    25:116:void a(java.lang.String) -> a
+com.alibaba.pdns.net.b -> com.alibaba.pdns.net.b:
+# {"id":"sourceFile","fileName":"HttpRequest.java"}
+    java.lang.String b -> a
+    int a -> b
+    1:4:void <init>() -> <init>
+    1:97:java.lang.Object a(java.lang.String,com.alibaba.pdns.model.f,java.util.HashMap,java.lang.String,boolean,java.lang.String,com.alibaba.pdns.model.e) -> a
+    98:104:java.lang.String a(java.lang.String,com.alibaba.pdns.model.f,int) -> a
+    105:127:java.lang.String a(java.lang.String,java.lang.String,com.alibaba.pdns.model.f,boolean,java.lang.String,com.alibaba.pdns.model.e,int) -> a
+    128:196:boolean a(java.lang.String,java.lang.String) -> a
+    197:213:boolean a(java.lang.String,java.lang.String):181:197 -> a
+    214:246:boolean a(java.lang.String,java.lang.String):183:215 -> a
+    247:268:float a(java.lang.String):216:237 -> a
+com.alibaba.pdns.net.c -> com.alibaba.pdns.net.c:
+# {"id":"sourceFile","fileName":"HttpTempIpRequest.java"}
+    1:1:void <init>() -> <init>
+    1:21:void a(java.lang.String,java.lang.String) -> a
+    22:175:void a(java.lang.String) -> a
+    176:186:void a(java.util.concurrent.CopyOnWriteArrayList,java.util.concurrent.CopyOnWriteArrayList) -> a
+com.alibaba.pdns.net.d -> com.alibaba.pdns.net.d:
+# {"id":"sourceFile","fileName":"HttpUrlConnManager.java"}
+    1:2:void <init>() -> <init>
+    1:8:com.alibaba.pdns.net.d a() -> a
+    9:31:java.net.HttpURLConnection a(java.lang.String) -> a
+    32:79:java.lang.String a(java.net.HttpURLConnection,int,com.alibaba.pdns.model.b) -> a
+    80:113:java.lang.String a(java.net.HttpURLConnection,int,com.alibaba.pdns.model.b):64:97 -> a
+    114:138:java.lang.String a(java.lang.String,java.lang.String):98:122 -> a
+    139:223:com.alibaba.pdns.model.e a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.alibaba.pdns.model.f,com.alibaba.pdns.model.e,com.alibaba.pdns.model.b):123:207 -> a
+    224:230:void a(java.lang.String,java.lang.String,java.lang.String,com.alibaba.pdns.model.f,com.alibaba.pdns.model.b):208:214 -> a
+    1:18:java.net.HttpURLConnection b(java.lang.String) -> b
+    1:14:java.net.HttpURLConnection c(java.lang.String) -> c
+com.alibaba.pdns.net.e -> com.alibaba.pdns.net.e:
+# {"id":"sourceFile","fileName":"INetworkRequests.java"}
+com.alibaba.pdns.net.f.a -> com.alibaba.pdns.net.f.a:
+# {"id":"sourceFile","fileName":"Constants.java"}
+    1:1:void <init>() -> <init>
+com.alibaba.pdns.net.f.b -> com.alibaba.pdns.net.f.b:
+# {"id":"sourceFile","fileName":"INetworkChangeObservable.java"}
+com.alibaba.pdns.net.f.b$a -> com.alibaba.pdns.net.f.b$a:
+# {"id":"sourceFile","fileName":"INetworkChangeObservable.java"}
+com.alibaba.pdns.net.f.c -> com.alibaba.pdns.net.f.c:
+# {"id":"sourceFile","fileName":"NetworkChangeManager.java"}
+    1:1:void <init>() -> <init>
+    1:5:void a(android.content.Context) -> a
+com.alibaba.pdns.net.f.d -> com.alibaba.pdns.net.f.d:
+# {"id":"sourceFile","fileName":"NetworkChangeObservableFactory.java"}
+    1:1:void <init>() -> <init>
+    1:1:com.alibaba.pdns.net.f.b a(android.content.Context) -> a
+com.alibaba.pdns.net.f.e -> com.alibaba.pdns.net.f.e:
+# {"id":"sourceFile","fileName":"NetworkChangeObservableImpl.java"}
+    1:4:void <init>(android.content.Context) -> <init>
+com.alibaba.pdns.net.f.e$a -> com.alibaba.pdns.net.f.e$a:
+# {"id":"sourceFile","fileName":"NetworkChangeObservableImpl.java"}
+    1:1:void <init>(com.alibaba.pdns.net.f.e) -> <init>
+    1:7:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.alibaba.pdns.net.f.f -> com.alibaba.pdns.net.f.f:
+# {"id":"sourceFile","fileName":"NetworkChangeObservableV21Impl.java"}
+    1:17:void <init>(android.content.Context) -> <init>
+com.alibaba.pdns.net.f.f$a -> com.alibaba.pdns.net.f.f$a:
+# {"id":"sourceFile","fileName":"NetworkChangeObservableV21Impl.java"}
+    1:1:void <init>(com.alibaba.pdns.net.f.f) -> <init>
+    1:2:void onAvailable(android.net.Network) -> onAvailable
+    1:1:void onCapabilitiesChanged(android.net.Network,android.net.NetworkCapabilities) -> onCapabilitiesChanged
+    1:1:void onLinkPropertiesChanged(android.net.Network,android.net.LinkProperties) -> onLinkPropertiesChanged
+    1:1:void onLosing(android.net.Network,int) -> onLosing
+    1:2:void onLost(android.net.Network) -> onLost
+    1:1:void onUnavailable() -> onUnavailable
+com.alibaba.pdns.net.f.g -> com.alibaba.pdns.net.f.g:
+# {"id":"sourceFile","fileName":"NetworkManager.java"}
+    java.lang.String p -> m
+    java.lang.String r -> o
+    java.lang.String q -> n
+    android.content.Context n -> k
+    java.lang.String t -> q
+    java.lang.String s -> p
+    java.lang.String v -> s
+    int m -> B
+    com.alibaba.pdns.net.f.g o -> l
+    java.lang.String u -> r
+    java.lang.String x -> u
+    java.lang.String w -> t
+    java.lang.String y -> v
+    int k -> z
+    int A -> x
+    int B -> y
+    int z -> w
+    java.lang.String l -> A
+    1:44:void <init>() -> <init>
+    1:9:void a(android.content.Context) -> a
+    10:48:int a() -> a
+    1:34:java.lang.String b() -> b
+    1:1:android.content.Context c() -> c
+    1:8:com.alibaba.pdns.net.f.g d() -> d
+com.alibaba.pdns.net.f.g$a -> com.alibaba.pdns.net.f.g$a:
+# {"id":"sourceFile","fileName":"NetworkManager.java"}
+    1:1:void <init>() -> <init>
+    1:1:java.lang.String a(java.lang.String) -> a
+    2:10:android.net.NetworkInfo a() -> a
+    1:24:java.lang.String b() -> b
+    1:9:boolean c() -> c
+    1:53:int d() -> d
+    1:12:java.lang.String e() -> e
+    1:19:boolean f() -> f
+com.alibaba.pdns.o -> com.alibaba.pdns.p:
+# {"id":"sourceFile","fileName":"PdnsUtils.java"}
+    1:1:void <init>() -> <init>
+    1:5:java.lang.String a(long) -> a
+    6:22:java.lang.String a(boolean,boolean,int) -> a
+    23:27:void a(java.lang.StringBuilder,int,int) -> a
+    28:42:java.util.concurrent.CopyOnWriteArrayList a(java.util.concurrent.CopyOnWriteArrayList) -> a
+    43:66:java.lang.String a(java.util.HashMap) -> a
+    67:68:boolean a(char) -> a
+    69:75:java.lang.String a(java.lang.String,java.lang.String) -> a
+    76:90:byte[] a(java.lang.String,byte[]) -> a
+    91:100:java.lang.String a(byte[]) -> a
+    101:102:java.lang.Object[] a(java.lang.Object[],java.lang.Object[]) -> a
+    103:107:java.lang.Float a(java.lang.Float,java.lang.Float) -> a
+    108:122:java.lang.String a(java.lang.String,java.lang.String,java.lang.String) -> a
+    123:127:java.lang.String a(java.lang.String) -> a
+    128:136:java.lang.String a(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    137:140:boolean a(java.util.Set,java.util.Set) -> a
+    141:144:java.util.Set a(int) -> a
+    145:148:java.util.Set a() -> a
+    1:18:java.lang.String b(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> b
+    19:19:java.lang.String b(java.lang.String) -> b
+    20:21:java.lang.String b() -> b
+    22:35:java.lang.String b(java.lang.String,java.lang.String,java.lang.String) -> b
+    36:41:java.lang.String b(java.lang.String,java.lang.String) -> b
+    42:52:java.lang.String b(int) -> b
+    1:22:java.lang.String c(java.lang.String) -> c
+    23:44:java.lang.String c(java.lang.String,java.lang.String) -> c
+    45:47:java.lang.String c() -> c
+    1:4:java.lang.String d(java.lang.String,java.lang.String) -> d
+    5:11:long d(java.lang.String) -> d
+    1:4:boolean e(java.lang.String) -> e
+    5:9:java.lang.String e(java.lang.String,java.lang.String) -> e
+    1:12:int[] f(java.lang.String) -> f
+    13:28:java.lang.String f(java.lang.String,java.lang.String) -> f
+    1:16:java.lang.String g(java.lang.String,java.lang.String) -> g
+    17:21:boolean g(java.lang.String) -> g
+    1:22:boolean h(java.lang.String) -> h
+    1:14:boolean i(java.lang.String) -> i
+    1:20:boolean j(java.lang.String) -> j
+    1:17:boolean k(java.lang.String) -> k
+com.alibaba.pdns.p -> com.alibaba.pdns.q:
+# {"id":"sourceFile","fileName":"SHA.java"}
+    1:1:void <init>() -> <init>
+    1:19:java.lang.String a(java.lang.String) -> a
+    20:25:java.lang.String a(byte[]) -> a
+com.alibaba.pdns.pools.AbstractTask -> com.alibaba.pdns.pools.AbstractTask:
+    1:1:void <init>() -> <init>
+    2:15:void <init>(com.alibaba.pdns.pools.Callback$a) -> <init>
+    1:2:boolean a() -> a
+    3:3:void a(com.alibaba.pdns.pools.AbstractTask$State) -> a
+    4:4:void a(com.alibaba.pdns.pools.e) -> a
+    1:2:void b(int,java.lang.Object[]) -> b
+    3:16:void b() -> b
+    17:17:void b(java.lang.Object) -> b
+    1:1:java.lang.Object g() -> g
+    1:1:com.alibaba.pdns.pools.AbstractTask$State h() -> h
+    1:1:boolean i() -> i
+com.alibaba.pdns.pools.AbstractTask$State -> com.alibaba.pdns.pools.AbstractTask$State:
+    1:2:void <clinit>() -> <clinit>
+    1:2:void <init>(java.lang.String,int,int) -> <init>
+    1:1:int value() -> value
+    1:1:com.alibaba.pdns.pools.AbstractTask$State valueOf(java.lang.String) -> valueOf
+    1:1:com.alibaba.pdns.pools.AbstractTask$State[] values() -> values
+com.alibaba.pdns.pools.Callback$CancelledException -> com.alibaba.pdns.pools.Callback$CancelledException:
+    1:1:void <init>(java.lang.String) -> <init>
+com.alibaba.pdns.pools.Callback$b -> com.alibaba.pdns.pools.Callback$b:
+    void b(java.lang.Object) -> a
+    void a(java.lang.Object) -> b
+com.alibaba.pdns.pools.Priority -> com.alibaba.pdns.pools.Priority:
+    1:2:void <clinit>() -> <clinit>
+    1:1:void <init>(java.lang.String,int) -> <init>
+    1:1:com.alibaba.pdns.pools.Priority valueOf(java.lang.String) -> valueOf
+    1:1:com.alibaba.pdns.pools.Priority[] values() -> values
+com.alibaba.pdns.pools.a -> com.alibaba.pdns.pools.a:
+# {"id":"sourceFile","fileName":"PAsyncTask.java"}
+    1:1:void <init>() -> <init>
+    1:8:com.alibaba.pdns.pools.d a() -> a
+    9:17:com.alibaba.pdns.pools.AbstractTask b(com.alibaba.pdns.pools.AbstractTask):5:13 -> a
+    18:18:void a(java.lang.Runnable,long):9:9 -> a
+    19:19:void a(java.lang.Runnable):10:10 -> a
+    20:22:void a(java.lang.Runnable[]):11:13 -> a
+    23:31:com.alibaba.pdns.pools.AbstractTask a(android.app.Activity,com.alibaba.pdns.pools.AbstractTask):14:22 -> a
+    32:105:com.alibaba.pdns.pools.Callback$a a(com.alibaba.pdns.pools.Callback$b,com.alibaba.pdns.pools.AbstractTask[]):37:110 -> a
+    106:106:java.util.concurrent.ExecutorService a(int,int,long,java.lang.String,boolean):111:111 -> a
+    107:107:java.util.concurrent.ScheduledExecutorService a(java.lang.String,boolean):112:112 -> a
+    1:1:void e(java.lang.Runnable) -> b
+    2:2:java.util.concurrent.ExecutorService b(java.lang.String,boolean):14:14 -> b
+    3:16:java.lang.Object a(com.alibaba.pdns.pools.AbstractTask):23:36 -> b
+    1:1:java.util.concurrent.Future c(java.lang.Runnable) -> c
+    1:1:void d(java.lang.Runnable) -> d
+    1:4:void b(java.lang.Runnable) -> e
+    1:1:void execute(java.lang.Runnable) -> execute
+com.alibaba.pdns.pools.a$a -> com.alibaba.pdns.pools.a$a:
+# {"id":"sourceFile","fileName":"PAsyncTask.java"}
+    1:4:void <init>(com.alibaba.pdns.pools.a,com.alibaba.pdns.pools.AbstractTask[],com.alibaba.pdns.pools.Callback$b) -> <init>
+    1:3:void run() -> run
+com.alibaba.pdns.pools.a$b -> com.alibaba.pdns.pools.a$b:
+# {"id":"sourceFile","fileName":"PAsyncTask.java"}
+    1:1:void <init>(com.alibaba.pdns.pools.a,com.alibaba.pdns.pools.AbstractTask,com.alibaba.pdns.pools.Callback$b,com.alibaba.pdns.pools.AbstractTask,java.lang.Runnable) -> <init>
+    1:2:void a(java.lang.Object) -> a
+    3:4:void a(com.alibaba.pdns.pools.Callback$CancelledException) -> a
+    5:6:void a(java.lang.Throwable,boolean) -> a
+    1:2:void j() -> j
+com.alibaba.pdns.pools.a$b$a -> com.alibaba.pdns.pools.a$b$a:
+# {"id":"sourceFile","fileName":"PAsyncTask.java"}
+    1:1:void <init>(com.alibaba.pdns.pools.a$b) -> <init>
+    1:2:void run() -> run
+com.alibaba.pdns.pools.a$b$b -> com.alibaba.pdns.pools.a$b$b:
+# {"id":"sourceFile","fileName":"PAsyncTask.java"}
+    1:1:void <init>(com.alibaba.pdns.pools.a$b,com.alibaba.pdns.pools.Callback$CancelledException) -> <init>
+    1:2:void run() -> run
+com.alibaba.pdns.pools.a$b$c -> com.alibaba.pdns.pools.a$b$c:
+# {"id":"sourceFile","fileName":"PAsyncTask.java"}
+    1:1:void <init>(com.alibaba.pdns.pools.a$b,java.lang.Throwable,boolean) -> <init>
+    1:2:void run() -> run
+com.alibaba.pdns.pools.a$b$d -> com.alibaba.pdns.pools.a$b$d:
+# {"id":"sourceFile","fileName":"PAsyncTask.java"}
+    1:1:void <init>(com.alibaba.pdns.pools.a$b) -> <init>
+    1:4:void run() -> run
+com.alibaba.pdns.pools.a$c -> com.alibaba.pdns.pools.a$c:
+# {"id":"sourceFile","fileName":"PAsyncTask.java"}
+    1:1:void <init>(com.alibaba.pdns.pools.a,com.alibaba.pdns.pools.AbstractTask[]) -> <init>
+    1:2:boolean a() -> a
+    1:2:void b() -> b
+com.alibaba.pdns.pools.b -> com.alibaba.pdns.pools.b:
+# {"id":"sourceFile","fileName":"PriorityExecutor.java"}
+    java.util.concurrent.atomic.AtomicInteger g -> f
+    java.util.concurrent.ThreadPoolExecutor a -> j
+    java.util.Comparator i -> h
+    java.util.concurrent.ThreadFactory h -> g
+    java.util.Comparator j -> i
+    int e -> d
+    int f -> e
+    int c -> b
+    int d -> c
+    int b -> a
+    1:34:void <clinit>() -> <clinit>
+    1:1:void <init>(boolean) -> <init>
+    2:4:void <init>(int,boolean) -> <init>
+    1:1:int a() -> a
+    2:2:void a(int) -> a
+    1:1:java.util.concurrent.ThreadPoolExecutor b() -> b
+    2:5:java.util.concurrent.Future b(java.lang.Runnable) -> b
+    1:1:boolean c() -> c
+    1:4:void execute(java.lang.Runnable) -> execute
+com.alibaba.pdns.pools.b$a -> com.alibaba.pdns.pools.b$a:
+# {"id":"sourceFile","fileName":"PriorityExecutor.java"}
+    1:3:void <init>() -> <init>
+    1:1:java.lang.Thread newThread(java.lang.Runnable) -> newThread
+com.alibaba.pdns.pools.b$b -> com.alibaba.pdns.pools.b$b:
+# {"id":"sourceFile","fileName":"PriorityExecutor.java"}
+    1:1:void <init>() -> <init>
+    1:1:int compare(java.lang.Object,java.lang.Object) -> compare
+    2:7:int compare(java.lang.Runnable,java.lang.Runnable) -> compare
+com.alibaba.pdns.pools.b$c -> com.alibaba.pdns.pools.b$c:
+# {"id":"sourceFile","fileName":"PriorityExecutor.java"}
+    1:1:void <init>() -> <init>
+    1:1:int compare(java.lang.Object,java.lang.Object) -> compare
+    2:7:int compare(java.lang.Runnable,java.lang.Runnable) -> compare
+com.alibaba.pdns.pools.c -> com.alibaba.pdns.pools.c:
+# {"id":"sourceFile","fileName":"PriorityRunnable.java"}
+    1:3:void <init>(com.alibaba.pdns.pools.Priority,java.lang.Runnable) -> <init>
+    1:1:void run() -> run
+com.alibaba.pdns.pools.d -> com.alibaba.pdns.pools.d:
+# {"id":"sourceFile","fileName":"TaskController.java"}
+    com.alibaba.pdns.pools.AbstractTask b(com.alibaba.pdns.pools.AbstractTask) -> a
+    java.lang.Object a(com.alibaba.pdns.pools.AbstractTask) -> b
+    void e(java.lang.Runnable) -> b
+    void b(java.lang.Runnable) -> e
+com.alibaba.pdns.pools.e -> com.alibaba.pdns.pools.e:
+# {"id":"sourceFile","fileName":"TaskProxy.java"}
+    int s -> n
+    int t -> o
+    int q -> l
+    java.lang.String m -> h
+    int r -> m
+    int o -> j
+    com.alibaba.pdns.pools.e$c k -> f
+    int p -> k
+    com.alibaba.pdns.pools.AbstractTask g -> r
+    int n -> i
+    boolean j -> u
+    java.lang.ref.WeakReference f -> q
+    boolean i -> t
+    java.util.concurrent.Executor h -> s
+    com.alibaba.pdns.pools.b l -> g
+    int u -> p
+    1:9:void <clinit>() -> <clinit>
+    1:21:void <init>(com.alibaba.pdns.pools.AbstractTask) -> <init>
+    22:61:void <init>(android.app.Activity,com.alibaba.pdns.pools.AbstractTask) -> <init>
+    1:1:boolean a(com.alibaba.pdns.pools.e,boolean) -> a
+    2:4:void a(java.lang.Object) -> a
+    5:7:void a(java.lang.Throwable,boolean) -> a
+    8:9:void a(int,java.lang.Object[]) -> a
+    10:12:void a(com.alibaba.pdns.pools.Callback$CancelledException) -> a
+    13:14:void a(com.alibaba.pdns.pools.AbstractTask$State) -> a
+    1:1:boolean b(com.alibaba.pdns.pools.e) -> b
+    2:2:boolean b(com.alibaba.pdns.pools.e,boolean) -> b
+    1:1:com.alibaba.pdns.pools.AbstractTask c(com.alibaba.pdns.pools.e) -> c
+    1:1:boolean d(com.alibaba.pdns.pools.e) -> d
+    2:48:java.lang.Object d() -> d
+    1:1:boolean e(com.alibaba.pdns.pools.e) -> e
+    2:2:java.util.concurrent.Executor e() -> e
+    1:1:com.alibaba.pdns.pools.Priority f() -> f
+    1:2:void j() -> j
+    1:3:void k() -> k
+    1:3:void l() -> l
+    1:1:java.lang.String m() -> n
+    1:1:boolean n() -> o
+com.alibaba.pdns.pools.e$a -> com.alibaba.pdns.pools.e$a:
+# {"id":"sourceFile","fileName":"TaskProxy.java"}
+    1:1:void <init>(com.alibaba.pdns.pools.e) -> <init>
+    1:92:void run() -> run
+com.alibaba.pdns.pools.e$b -> com.alibaba.pdns.pools.e$b:
+# {"id":"sourceFile","fileName":"TaskProxy.java"}
+    1:3:void <init>(com.alibaba.pdns.pools.e,java.lang.Object[]) -> <init>
+com.alibaba.pdns.pools.e$c -> com.alibaba.pdns.pools.e$c:
+# {"id":"sourceFile","fileName":"TaskProxy.java"}
+    1:1:void <clinit>() -> <clinit>
+    1:1:void <init>(com.alibaba.pdns.pools.e$a) -> <init>
+    2:2:void <init>() -> <init>
+    1:104:void handleMessage(android.os.Message) -> handleMessage
+com.alibaba.pdns.pools.f -> com.alibaba.pdns.pools.f:
+# {"id":"sourceFile","fileName":"UdfThreadPoolUtils.java"}
+    1:1:void <init>() -> <init>
+    1:1:java.util.concurrent.ExecutorService a(int,int,long,java.lang.String,boolean) -> a
+    2:2:java.util.concurrent.ExecutorService a(java.lang.String,boolean) -> a
+    1:1:java.util.concurrent.ScheduledExecutorService b(java.lang.String,boolean) -> b
+com.alibaba.pdns.pools.f$a -> com.alibaba.pdns.pools.f$a:
+# {"id":"sourceFile","fileName":"UdfThreadPoolUtils.java"}
+    1:1:void <init>() -> <init>
+    1:1:void rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor) -> rejectedExecution
+com.alibaba.pdns.pools.f$b -> com.alibaba.pdns.pools.f$b:
+# {"id":"sourceFile","fileName":"UdfThreadPoolUtils.java"}
+    1:1:void <init>(java.lang.String,boolean) -> <init>
+    1:2:java.lang.Thread newThread(java.lang.Runnable) -> newThread
+com.alibaba.pdns.pools.f$c -> com.alibaba.pdns.pools.f$c:
+# {"id":"sourceFile","fileName":"UdfThreadPoolUtils.java"}
+    1:1:void <init>(java.lang.String,boolean) -> <init>
+    1:2:java.lang.Thread newThread(java.lang.Runnable) -> newThread
+com.alibaba.pdns.pools.f$d -> com.alibaba.pdns.pools.f$d:
+# {"id":"sourceFile","fileName":"UdfThreadPoolUtils.java"}
+    java.util.concurrent.atomic.AtomicInteger d -> b
+    java.lang.String c -> a
+    java.lang.String a -> c
+    boolean b -> d
+    1:1:void <clinit>() -> <clinit>
+    1:3:void <init>(java.lang.String,boolean) -> <init>
+    1:3:java.lang.Thread newThread(java.lang.Runnable) -> newThread
+com.alibaba.pdns.q -> com.alibaba.pdns.s:
+# {"id":"sourceFile","fileName":"SessionTrackMgr.java"}
+    java.lang.String b -> a
+    java.lang.String a -> b
+    1:1:void <init>(com.alibaba.pdns.q$a) -> <init>
+    2:13:void <init>() -> <init>
+    1:1:java.lang.String a() -> a
+    1:1:com.alibaba.pdns.q b() -> b
+com.alibaba.pdns.q$a -> com.alibaba.pdns.s$a:
+# {"id":"sourceFile","fileName":"SessionTrackMgr.java"}
+com.alibaba.pdns.q$b -> com.alibaba.pdns.s$b:
+# {"id":"sourceFile","fileName":"SessionTrackMgr.java"}
+    1:1:void <clinit>() -> <clinit>
+    1:1:void <init>() -> <init>
+    1:1:com.alibaba.pdns.q a() -> a
+com.alibaba.pdns.r -> com.alibaba.pdns.u:
+# {"id":"sourceFile","fileName":"ZoneTree.java"}
+    1:6:void <init>() -> <init>
+    7:19:void <init>(java.lang.String) -> <init>
+    1:17:void a(java.lang.String) -> a
+    18:18:boolean a() -> a
+    1:16:boolean b(java.lang.String) -> b
+    17:18:boolean b() -> b
+    1:1:boolean c() -> c
+    2:10:boolean c(java.lang.String) -> c
+    1:2:boolean d() -> d
+    3:11:boolean d(java.lang.String) -> d
+    1:2:boolean e(java.lang.String) -> e
+    1:2:boolean f(java.lang.String) -> f
+    1:2:boolean g(java.lang.String) -> g
+    1:2:boolean h(java.lang.String) -> h
+    1:9:boolean i(java.lang.String) -> i
+com.alibaba.pdns.r.a -> com.alibaba.pdns.t.a:
+# {"id":"sourceFile","fileName":"CacheUpdataHelper.java"}
+    1:1:void <clinit>() -> <clinit>
+    1:1:void <init>() -> <init>
+    1:1:java.util.Map a() -> a
+    2:44:void a(com.alibaba.pdns.model.a) -> a
+    1:6:boolean b(com.alibaba.pdns.model.a) -> b
+com.alibaba.pdns.r.a$a -> com.alibaba.pdns.t.a$a:
+# {"id":"sourceFile","fileName":"CacheUpdataHelper.java"}
+    1:1:void <init>(com.alibaba.pdns.r.a,java.lang.String,java.lang.String,com.alibaba.pdns.r.a$b) -> <init>
+    1:9:void run() -> run
+com.alibaba.pdns.r.a$a$a -> com.alibaba.pdns.t.a$a$a:
+# {"id":"sourceFile","fileName":"CacheUpdataHelper.java"}
+    1:1:void <init>(com.alibaba.pdns.r.a$a) -> <init>
+    1:1:void run() -> run
+com.alibaba.pdns.r.a$b -> com.alibaba.pdns.t.a$b:
+# {"id":"sourceFile","fileName":"CacheUpdataHelper.java"}
+    1:1:void <init>() -> <init>
+    2:2:void <init>(com.alibaba.pdns.r.a$a) -> <init>
+com.alibaba.pdns.r.b -> com.alibaba.pdns.t.b:
+# {"id":"sourceFile","fileName":"DNSCacheUtils.java"}
+    1:1:void <init>() -> <init>
+    1:8:void run() -> run
+com.alibaba.pdns.r.c -> com.alibaba.pdns.t.c:
+# {"id":"sourceFile","fileName":"DNSCacheManager.java"}
+    com.alibaba.pdns.r.a c -> f
+    int e -> b
+    int f -> c
+    com.alibaba.pdns.w.a a -> d
+    int d -> a
+    com.alibaba.pdns.x.b b -> e
+    1:10:void <init>() -> <init>
+    1:1:com.alibaba.pdns.x.b a(com.alibaba.pdns.r.c) -> a
+    2:49:com.alibaba.pdns.model.a a(java.lang.String,java.lang.String,java.lang.String,boolean) -> a
+    50:145:com.alibaba.pdns.model.a a(com.alibaba.pdns.model.d) -> a
+    146:165:java.util.concurrent.CopyOnWriteArrayList a() -> a
+    166:166:void a(int) -> a
+    167:183:void a(java.lang.String,com.alibaba.pdns.model.a) -> a
+    184:185:int a(long) -> a
+    186:189:boolean a(com.alibaba.pdns.model.a) -> a
+    1:19:java.util.concurrent.CopyOnWriteArrayList b() -> b
+    20:30:void b(com.alibaba.pdns.model.a) -> b
+    1:1:void d() -> c
+    2:7:boolean c(com.alibaba.pdns.model.a) -> c
+    1:1:void c() -> d
+    2:5:boolean d(com.alibaba.pdns.model.a) -> d
+    1:48:void e(com.alibaba.pdns.model.a) -> e
+com.alibaba.pdns.r.c$a -> com.alibaba.pdns.t.c$a:
+# {"id":"sourceFile","fileName":"DNSCacheManager.java"}
+    1:1:void <init>(com.alibaba.pdns.r.c,com.alibaba.pdns.model.c) -> <init>
+    1:14:void run() -> run
+com.alibaba.pdns.r.d -> com.alibaba.pdns.t.d:
+# {"id":"sourceFile","fileName":"DNSCacheUtils.java"}
+    1:26:void <clinit>() -> <clinit>
+    1:1:void <init>() -> <init>
+    1:1:void a(java.lang.Integer) -> a
+    2:5:void a(java.lang.String,java.lang.Object) -> a
+    6:15:com.alibaba.pdns.r.d$a a(java.lang.String) -> a
+    16:22:java.util.concurrent.CopyOnWriteArrayList a(java.util.concurrent.CopyOnWriteArrayList,java.lang.String) -> a
+    23:24:void a() -> a
+    1:8:void b(java.lang.String,java.lang.Object) -> b
+    9:11:void b() -> b
+    12:13:void b(java.lang.String) -> b
+    1:3:void c(java.lang.String) -> c
+    4:34:void c() -> c
+    1:1:java.util.Map d() -> d
+    2:2:com.alibaba.pdns.r.d$a d(java.lang.String) -> d
+    1:1:java.util.List e() -> e
+    2:36:void e(java.lang.String) -> e
+    1:4:java.lang.String f() -> f
+    1:1:int g() -> g
+    1:1:void h() -> h
+    1:2:void i() -> i
+com.alibaba.pdns.r.d$a -> com.alibaba.pdns.t.d$a:
+# {"id":"sourceFile","fileName":"DNSCacheUtils.java"}
+    1:2:void <init>(java.lang.Object) -> <init>
+    1:1:java.lang.Object a() -> a
+    1:1:java.lang.String toString() -> toString
+com.alibaba.pdns.r.e -> com.alibaba.pdns.t.e:
+# {"id":"sourceFile","fileName":"IDnsCache.java"}
+    void d() -> c
+    void c() -> d
+com.alibaba.pdns.s.a -> com.alibaba.pdns.v.a:
+# {"id":"sourceFile","fileName":"CacheUpdataHelper.java"}
+    1:1:void <clinit>() -> <clinit>
+    1:1:void <init>() -> <init>
+    1:1:java.util.Map a() -> a
+    2:44:void a(com.alibaba.pdns.model.a) -> a
+    1:6:boolean b(com.alibaba.pdns.model.a) -> b
+com.alibaba.pdns.s.a$a -> com.alibaba.pdns.v.a$a:
+# {"id":"sourceFile","fileName":"CacheUpdataHelper.java"}
+    1:1:void <init>(com.alibaba.pdns.s.a,java.lang.String,java.lang.String,com.alibaba.pdns.s.a$b) -> <init>
+    1:9:void run() -> run
+com.alibaba.pdns.s.a$a$a -> com.alibaba.pdns.v.a$a$a:
+# {"id":"sourceFile","fileName":"CacheUpdataHelper.java"}
+    1:1:void <init>(com.alibaba.pdns.s.a$a) -> <init>
+    1:1:void run() -> run
+com.alibaba.pdns.s.a$b -> com.alibaba.pdns.v.a$b:
+# {"id":"sourceFile","fileName":"CacheUpdataHelper.java"}
+    1:1:void <init>() -> <init>
+    2:2:void <init>(com.alibaba.pdns.s.a$a) -> <init>
+com.alibaba.pdns.s.b -> com.alibaba.pdns.v.b:
+# {"id":"sourceFile","fileName":"DNSCacheUtils.java"}
+    1:1:void <init>() -> <init>
+    1:8:void run() -> run
+com.alibaba.pdns.s.c -> com.alibaba.pdns.v.c:
+# {"id":"sourceFile","fileName":"DNSCacheManager.java"}
+    com.alibaba.pdns.s.a c -> f
+    int e -> b
+    int f -> c
+    com.alibaba.pdns.w.a a -> d
+    int d -> a
+    com.alibaba.pdns.x.b b -> e
+    1:10:void <init>() -> <init>
+    1:1:com.alibaba.pdns.x.b a(com.alibaba.pdns.s.c) -> a
+    2:49:com.alibaba.pdns.model.a a(java.lang.String,java.lang.String,java.lang.String,boolean) -> a
+    50:144:com.alibaba.pdns.model.a a(com.alibaba.pdns.model.d) -> a
+    145:164:java.util.concurrent.CopyOnWriteArrayList a() -> a
+    165:165:void a(int) -> a
+    166:182:void a(java.lang.String,com.alibaba.pdns.model.a) -> a
+    183:184:int a(long) -> a
+    185:188:boolean a(com.alibaba.pdns.model.a) -> a
+    1:19:java.util.concurrent.CopyOnWriteArrayList b() -> b
+    20:30:void b(com.alibaba.pdns.model.a) -> b
+    1:1:void c() -> c
+    2:7:boolean c(com.alibaba.pdns.model.a) -> c
+    1:1:void d() -> d
+    2:5:boolean d(com.alibaba.pdns.model.a) -> d
+    1:48:void e(com.alibaba.pdns.model.a) -> e
+com.alibaba.pdns.s.c$a -> com.alibaba.pdns.v.c$a:
+# {"id":"sourceFile","fileName":"DNSCacheManager.java"}
+    1:1:void <init>(com.alibaba.pdns.s.c,com.alibaba.pdns.model.c) -> <init>
+    1:14:void run() -> run
+com.alibaba.pdns.s.d -> com.alibaba.pdns.v.d:
+# {"id":"sourceFile","fileName":"DNSCacheUtils.java"}
+    1:26:void <clinit>() -> <clinit>
+    1:1:void <init>() -> <init>
+    1:1:void a(java.lang.Integer) -> a
+    2:5:void a(java.lang.String,java.lang.Object) -> a
+    6:15:com.alibaba.pdns.s.d$a a(java.lang.String) -> a
+    16:22:java.util.concurrent.CopyOnWriteArrayList a(java.util.concurrent.CopyOnWriteArrayList,java.lang.String) -> a
+    23:24:void a() -> a
+    1:7:void b(java.lang.String,java.lang.Object) -> b
+    8:10:void b() -> b
+    11:12:void b(java.lang.String) -> b
+    1:3:void c(java.lang.String) -> c
+    4:34:void c() -> c
+    1:1:java.util.Map d() -> d
+    2:2:com.alibaba.pdns.s.d$a d(java.lang.String) -> d
+    1:1:java.util.List e() -> e
+    2:36:void e(java.lang.String) -> e
+    1:4:java.lang.String f() -> f
+    1:1:int g() -> g
+    1:1:void h() -> h
+    1:2:void i() -> i
+com.alibaba.pdns.s.d$a -> com.alibaba.pdns.v.d$a:
+# {"id":"sourceFile","fileName":"DNSCacheUtils.java"}
+    1:2:void <init>(java.lang.Object) -> <init>
+    1:1:java.lang.Object a() -> a
+    1:1:java.lang.String toString() -> toString
+com.alibaba.pdns.s.e -> com.alibaba.pdns.v.f:
+# {"id":"sourceFile","fileName":"IDnsCache.java"}
+    void d() -> c
+    void c() -> d
+com.alibaba.pdns.s.e.a -> com.alibaba.pdns.v.e.a:
+# {"id":"sourceFile","fileName":"AliDohJsonParse.java"}
+    1:1:void <init>() -> <init>
+    1:97:com.alibaba.pdns.model.d a(java.lang.String,java.lang.String) -> a
+com.alibaba.pdns.s.e.b -> com.alibaba.pdns.v.e.b:
+# {"id":"sourceFile","fileName":"AliShortDohJsonParse.java"}
+    1:1:void <init>() -> <init>
+    1:14:com.alibaba.pdns.model.d b(java.lang.String,java.lang.String) -> b
+com.alibaba.pdns.s.e.c -> com.alibaba.pdns.v.e.c:
+# {"id":"sourceFile","fileName":"AlibabaPdns.java"}
+    java.lang.String p -> g
+    java.lang.String o -> f
+    java.lang.String q -> h
+    com.alibaba.pdns.net.e a -> i
+    java.lang.String e -> m
+    java.lang.String d -> l
+    com.alibaba.pdns.s.e.c j -> a
+    java.lang.String g -> o
+    java.lang.String f -> n
+    java.lang.String i -> q
+    java.lang.String h -> p
+    java.lang.String l -> c
+    java.lang.String k -> b
+    com.alibaba.pdns.s.e.a b -> j
+    com.alibaba.pdns.s.e.b c -> k
+    java.lang.String n -> e
+    java.lang.String m -> d
+    1:13:void <init>() -> <init>
+    1:51:java.lang.String a(java.lang.StringBuffer,java.lang.String,java.lang.String):9:59 -> a
+    52:63:java.lang.String a(java.lang.StringBuffer,java.lang.String,java.lang.String,java.lang.String):60:71 -> a
+    64:88:java.lang.String a(java.lang.StringBuffer,java.lang.String,java.lang.String,java.lang.Long,java.lang.String,java.lang.String,java.lang.String):72:96 -> a
+    89:119:void a(java.lang.String,java.lang.String,int,com.alibaba.pdns.model.e,boolean):97:127 -> a
+    120:126:void a(java.lang.String,java.lang.String):128:134 -> a
+    127:127:com.alibaba.pdns.model.d a(java.lang.String,java.lang.String,int):135:135 -> a
+    128:187:com.alibaba.pdns.model.d a(java.lang.String,java.lang.String,boolean,int):136:195 -> a
+    1:43:void b(java.lang.String,java.lang.String,int) -> b
+    1:8:com.alibaba.pdns.s.e.c a() -> e
+com.alibaba.pdns.s.e.c$a -> com.alibaba.pdns.v.e.c$a:
+# {"id":"sourceFile","fileName":"AlibabaPdns.java"}
+    1:1:void <init>(com.alibaba.pdns.s.e.c,java.util.concurrent.Future,java.lang.String,java.lang.String,int,boolean) -> <init>
+    1:16:void run() -> run
+com.alibaba.pdns.s.e.d -> com.alibaba.pdns.v.e.d:
+# {"id":"sourceFile","fileName":"LocalDns.java"}
+    1:1:void <init>() -> <init>
+    1:95:com.alibaba.pdns.model.d a(java.lang.String,java.lang.String,int) -> a
+com.alibaba.pdns.t.a -> com.alibaba.pdns.w.b:
+# {"id":"sourceFile","fileName":"DNSManager.java"}
+    1:6:void <init>() -> <init>
+    1:66:com.alibaba.pdns.model.d a(java.lang.String,java.lang.String) -> a
+com.alibaba.pdns.t.a$a -> com.alibaba.pdns.w.a:
+# {"id":"sourceFile","fileName":"DNSExecutors.java"}
+com.alibaba.pdns.t.a$b -> com.alibaba.pdns.w.b$a:
+# {"id":"sourceFile","fileName":"DNSExecutors.java"}
+com.alibaba.pdns.t.a$c -> com.alibaba.pdns.w.b$b:
+# {"id":"sourceFile","fileName":"DNSExecutors.java"}
+    1:1:void <init>(com.alibaba.pdns.t.a$a) -> <init>
+    2:8:void <init>() -> <init>
+    1:6:void a(java.lang.Runnable,long) -> a
+    7:9:void a(java.lang.Runnable) -> a
+    1:1:void execute(java.lang.Runnable) -> b
+com.alibaba.pdns.t.a$d -> com.alibaba.pdns.w.b$c:
+# {"id":"sourceFile","fileName":"DNSExecutors.java"}
+    1:1:void <init>(com.alibaba.pdns.t.a$a) -> <init>
+    2:10:void <init>() -> <init>
+    1:1:void execute(java.lang.Runnable) -> execute
+com.alibaba.pdns.t.b -> com.alibaba.pdns.w.c:
+# {"id":"sourceFile","fileName":"IDns.java"}
+com.alibaba.pdns.t.c -> com.alibaba.pdns.w.d:
+# {"id":"sourceFile","fileName":"IDnsProvider.java"}
+com.alibaba.pdns.t.d -> com.alibaba.pdns.w.e:
+# {"id":"sourceFile","fileName":"IDohJsonParser.java"}
+com.alibaba.pdns.t.e.a -> com.alibaba.pdns.w.f.a:
+# {"id":"sourceFile","fileName":"AliDohJsonParse.java"}
+    1:1:void <init>() -> <init>
+    1:97:com.alibaba.pdns.model.d a(java.lang.String,java.lang.String) -> a
+com.alibaba.pdns.t.e.b -> com.alibaba.pdns.w.f.b:
+# {"id":"sourceFile","fileName":"AliShortDohJsonParse.java"}
+    1:1:void <init>() -> <init>
+    1:14:com.alibaba.pdns.model.d b(java.lang.String,java.lang.String) -> b
+com.alibaba.pdns.t.e.c -> com.alibaba.pdns.w.f.c:
+# {"id":"sourceFile","fileName":"AlibabaPdns.java"}
+    java.lang.String q -> g
+    java.lang.String p -> f
+    java.lang.String r -> h
+    com.alibaba.pdns.net.e a -> i
+    java.lang.String e -> m
+    com.alibaba.pdns.t.e.c k -> a
+    java.lang.String d -> l
+    java.lang.String g -> o
+    java.lang.String f -> n
+    java.lang.String i -> q
+    java.lang.String h -> p
+    java.lang.String j -> r
+    com.alibaba.pdns.t.e.a b -> j
+    com.alibaba.pdns.t.e.b c -> k
+    java.lang.String m -> c
+    java.lang.String l -> b
+    java.lang.String o -> e
+    java.lang.String n -> d
+    1:14:void <init>() -> <init>
+    1:8:com.alibaba.pdns.t.e.c a() -> a
+    9:38:java.lang.String a(java.lang.StringBuffer,java.lang.String,java.lang.String) -> a
+    39:50:java.lang.String a(java.lang.StringBuffer,java.lang.String,java.lang.String,java.lang.String) -> a
+    51:77:java.lang.String a(java.lang.StringBuffer,java.lang.String,java.lang.String,java.lang.Long,java.lang.String,java.lang.String,java.lang.String) -> a
+    78:104:void a(java.lang.String,java.lang.String,int,com.alibaba.pdns.model.e,boolean) -> a
+    105:111:void a(java.lang.String,java.lang.String) -> a
+    112:112:com.alibaba.pdns.model.d a(java.lang.String,java.lang.String,int) -> a
+    113:172:com.alibaba.pdns.model.d a(java.lang.String,java.lang.String,boolean,int) -> a
+    1:43:void b(java.lang.String,java.lang.String,int) -> b
+com.alibaba.pdns.t.e.c$a -> com.alibaba.pdns.w.f.c$a:
+# {"id":"sourceFile","fileName":"AlibabaPdns.java"}
+    1:1:void <init>(com.alibaba.pdns.t.e.c,java.util.concurrent.Future,java.lang.String,java.lang.String,int,boolean) -> <init>
+    1:16:void run() -> run
+com.alibaba.pdns.t.e.d -> com.alibaba.pdns.w.f.d:
+# {"id":"sourceFile","fileName":"LocalDns.java"}
+    1:1:void <init>() -> <init>
+    1:94:com.alibaba.pdns.model.d a(java.lang.String,java.lang.String,int) -> a
+com.alibaba.pdns.u.a -> com.alibaba.pdns.x.a:
+# {"id":"sourceFile","fileName":"DNSExecutors.java"}
+    1:7:void <clinit>() -> <clinit>
+    1:1:void <init>() -> <init>
+    1:1:java.util.concurrent.atomic.AtomicInteger a() -> a
+    2:2:java.lang.String a(java.lang.String) -> a
+    3:3:void a(int) -> a
+    4:4:java.lang.Runnable a(java.lang.Runnable) -> a
+    1:1:int b() -> b
+    2:2:void b(java.lang.String) -> b
+    3:3:java.lang.Runnable b(java.lang.Runnable) -> b
+    4:9:void b(int) -> b
+    1:6:int c() -> c
+    7:7:void c(java.lang.String) -> c
+    1:2:java.lang.String d(java.lang.String) -> d
+com.alibaba.pdns.u.a$a -> com.alibaba.pdns.x.a$a:
+# {"id":"sourceFile","fileName":"DNSExecutors.java"}
+    1:1:void <init>(java.lang.Runnable) -> <init>
+    1:11:void run() -> run
+com.alibaba.pdns.u.a$b -> com.alibaba.pdns.x.a$b:
+# {"id":"sourceFile","fileName":"DNSExecutors.java"}
+com.alibaba.pdns.u.a$c -> com.alibaba.pdns.x.a$c:
+# {"id":"sourceFile","fileName":"DNSExecutors.java"}
+    1:1:void <init>(com.alibaba.pdns.u.a$a) -> <init>
+    2:8:void <init>() -> <init>
+    1:6:void a(java.lang.Runnable,long) -> a
+    7:9:void a(java.lang.Runnable) -> a
+    1:1:void execute(java.lang.Runnable) -> execute
+com.alibaba.pdns.u.a$d -> com.alibaba.pdns.x.a$d:
+# {"id":"sourceFile","fileName":"DNSExecutors.java"}
+    1:1:void <init>(com.alibaba.pdns.u.a$a) -> <init>
+    2:10:void <init>() -> <init>
+    1:1:void execute(java.lang.Runnable) -> execute
+com.alibaba.pdns.u.b -> com.alibaba.pdns.x.b:
+# {"id":"sourceFile","fileName":"IScheduledExecutor.java"}
+com.alibaba.pdns.v.a -> com.alibaba.pdns.y.a:
+# {"id":"sourceFile","fileName":"IQuery.java"}
+com.alibaba.pdns.v.b -> com.alibaba.pdns.y.b:
+# {"id":"sourceFile","fileName":"QueryManager.java"}
+    1:5:void <init>(com.alibaba.pdns.s.e) -> <init>
+    1:22:com.alibaba.pdns.model.a a(java.lang.String,java.lang.String,java.lang.String,boolean,boolean) -> a
+    23:23:boolean a(com.alibaba.pdns.model.a) -> a
+    24:25:com.alibaba.pdns.model.a a(java.lang.String,java.lang.String,java.lang.String,boolean) -> a
+com.alibaba.pdns.w.a -> com.alibaba.pdns.z.a:
+# {"id":"sourceFile","fileName":"IScore.java"}
+com.alibaba.pdns.w.b -> com.alibaba.pdns.z.b:
+# {"id":"sourceFile","fileName":"ScoreManager.java"}
+    1:1:void <init>() -> <init>
+    1:2:void a(com.alibaba.pdns.model.a) -> a
+    3:16:java.lang.String[] a(java.util.concurrent.CopyOnWriteArrayList) -> a
+    1:21:void b(java.util.concurrent.CopyOnWriteArrayList) -> b
+com.alibaba.pdns.w.b$a -> com.alibaba.pdns.z.b$a:
+# {"id":"sourceFile","fileName":"ScoreManager.java"}
+    1:1:void <init>(com.alibaba.pdns.w.b) -> <init>
+    1:1:int compare(java.lang.Object,java.lang.Object) -> compare
+    2:2:int compare(com.alibaba.pdns.model.c,com.alibaba.pdns.model.c) -> compare
+com.alibaba.pdns.x.a -> com.alibaba.pdns.a0.a:
+# {"id":"sourceFile","fileName":"BaseSpeedTest.java"}
+    1:1:void <init>() -> <init>
+com.alibaba.pdns.x.b -> com.alibaba.pdns.a0.b:
+# {"id":"sourceFile","fileName":"ISpeedtest.java"}
+com.alibaba.pdns.x.c -> com.alibaba.pdns.a0.c:
+# {"id":"sourceFile","fileName":"SpeedTestManager.java"}
+    java.util.concurrent.CopyOnWriteArrayList a -> e
+    java.lang.String b -> a
+    float c -> b
+    int e -> d
+    int d -> c
+    1:5:void <init>() -> <init>
+    1:3:float a(java.lang.String,int) -> a
+    1:3:float b(java.lang.String,int) -> b
+com.alibaba.pdns.x.d.a -> com.alibaba.pdns.a0.d.a:
+# {"id":"sourceFile","fileName":"PingTest.java"}
+    1:1:void <init>() -> <init>
+    1:4:float a(java.lang.String,int) -> a
+com.alibaba.pdns.x.d.a$a -> com.alibaba.pdns.a0.d.a$a:
+# {"id":"sourceFile","fileName":"PingTest.java"}
+    1:1:void <init>() -> <init>
+    1:2:boolean a(java.lang.String) -> a
+    1:21:float b(java.lang.String) -> b
+com.alibaba.pdns.x.d.b -> com.alibaba.pdns.a0.d.b:
+# {"id":"sourceFile","fileName":"Socket80Test.java"}
+    int a -> f
+    java.lang.String d -> c
+    java.lang.String c -> b
+    java.lang.String f -> e
+    int b -> a
+    java.lang.String e -> d
+    1:3:void <init>() -> <init>
+    1:1:float a(java.lang.String,int) -> a
+    2:56:void a(java.net.InetSocketAddress,float[],int,int) -> a
+    57:94:void a(java.net.InetSocketAddress,float[],int,int):27:64 -> a
+    1:51:float b(java.lang.String,int) -> b
