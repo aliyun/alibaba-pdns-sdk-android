@@ -155,6 +155,7 @@ java.lang.Object readResolve();
 -keep class com.alibaba.pdns.net.HttpsHostnameVerifier { public *;}
 -keep class com.alibaba.pdns.net.HttpsNotCheckVerifier { public *;}
 -keep class com.alibaba.pdns.manager.PublicDNSProvider$* { *; }
+-keep class com.alibaba.pdns.manager.DNSServerManager$* { *; }
 -keep class com.alibaba.pdns.JsonUitl { *** objectToString(...);}
 -keep class com.alibaba.pdns.jni.Jni {*;}
 
