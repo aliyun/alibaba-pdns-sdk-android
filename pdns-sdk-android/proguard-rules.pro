@@ -143,6 +143,9 @@ java.lang.Object readResolve();
 -keep public class * extends android.preference.Preference
 -keep public class * extends android.database.sqlite.SQLiteOpenHelper
 
+-keep class com.alibaba.pdns.** { *; }
+-dontwarn com.alibaba.pdns.**
+
 -keep class com.alibaba.pdns.log.HttpDnsLog { public *; }
 -keep class com.alibaba.pdns.log.Logger { public *; }
 -keep class com.alibaba.pdns.log.ILogger { public *; }
@@ -154,12 +157,10 @@ java.lang.Object readResolve();
 -keep class com.alibaba.pdns.net.HttpTrustManager { public *;}
 -keep class com.alibaba.pdns.net.HttpsHostnameVerifier { public *;}
 -keep class com.alibaba.pdns.net.HttpsNotCheckVerifier { public *;}
--keep class com.alibaba.pdns.manager.PublicDNSProvider$* { *; }
--keep class com.alibaba.pdns.manager.DNSServerManager$* { *; }
 -keep class com.alibaba.pdns.JsonUitl { *** objectToString(...);}
 -keep class com.alibaba.pdns.jni.Jni {*;}
 
--dontwarn com.alibaba.pdns.manager.**
+
 
 #-keepnames class com.alibaba.pdns.log.HttpDnsLog {
 #    private <fields>;
