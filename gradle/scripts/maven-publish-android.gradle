@@ -6,9 +6,9 @@ publishing {
         mavenJava(MavenPublication) {
             groupId "com.alibaba.pdns"
             artifactId "alidns-android-sdk"
-            version "2.3.0"
+            version "2.3.1"
 
-            artifact("$buildDir/outputs/aar/alidns-android-sdk-2.3.0.aar")
+            artifact("$buildDir/outputs/aar/alidns-android-sdk-2.3.1.aar")
 
             pom {
                 name = "pdnsdk"
